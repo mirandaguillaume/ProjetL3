@@ -1,0 +1,25 @@
+#production
+deployment:
+  user: guillaume
+  from: ./
+  to: /home/guillaume/Phpstormprojects/ProjetL3Test/
+  excludes:
+  strategy: rsync
+releases:
+  enabled: true
+  max: 10
+  symlink: current
+  directory: releases
+hosts:
+  - localhost
+tasks:
+  pre-deploy: 
+    - scm/update
+  on-deploy:
+    - symfony2/cache-warmup: {env: prod}
+    - symfony2/assets-install: {symlink: true}
+    - symfony2/assetic-dump
+  post-release:
+    - purge-apc-cache
+  post-deploy:
+    - purge-varnish-cache

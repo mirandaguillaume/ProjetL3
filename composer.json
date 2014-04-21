@@ -8,7 +8,7 @@
     },
     "require": {
         "php": ">=5.3.3",
-        "symfony/symfony": "2.3.*",
+        "symfony/symfony": "2.4.*",
         "doctrine/orm": ">=2.2.3,<2.4-dev",
         "doctrine/doctrine-bundle": "1.2.*",
         "twig/extensions": "1.0.*",
@@ -20,13 +20,10 @@
         "sensio/generator-bundle": "2.3.*",
         "incenteev/composer-parameter-handler": "~2.0",
         "friendsofsymfony/user-bundle": "dev-master",
-        "stof/doctrine-extensions-bundle": "1.1.x-dev",
         "genemu/form-bundle": "dev-master",
         "doctrine/migrations": "1.0.x-dev",
         "doctrine/doctrine-migrations-bundle": "2.1.x-dev",
         "willdurand/faker-bundle": "@stable",
-        "sonata-project/doctrine-orm-admin-bundle": "2.2.7",
-        "sonata-project/admin-bundle": "2.3.x-dev",
         "ccc/star-rating-bundle": "dev-master@dev",
         "fyneworks/star-rating": "dev-master@dev",
         "guzzle/guzzle": "v3.8.1"
