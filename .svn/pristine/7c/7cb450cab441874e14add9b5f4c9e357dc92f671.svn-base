@@ -1,0 +1,14 @@
+ProjetL3\ListeBundle\Entity\Liste:
+    type: entity
+    table: null
+    repositoryClass: ProjetL3\ListeBundle\Entity\ListeRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        nom:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }

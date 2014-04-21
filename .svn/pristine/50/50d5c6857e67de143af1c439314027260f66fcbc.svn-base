@@ -1,0 +1,26 @@
+{{ form_stylesheet(tri_form) }}
+{{ form_stylesheet(tag_search) }}
+
+{% stylesheets 'bundles/sonataadmin/select2/select2.css'
+filter='cssrewrite'%}
+<link rel="stylesheet" href="{{ asset_url }}"/>
+{% endstylesheets %}
+
+{# Body #}
+
+{{ form(tri_form) }}
+
+{{ form(tag_search) }}
+
+{% if tags is defined %}
+    {{ tags }}
+{% endif %}
+
+{# Javascripts #}
+
+{% javascripts 'bundles/sonataadmin/select2/select2.js' %}
+<script src="{{ asset_url }}" type="text/javascript"></script>
+{% endjavascripts %}
+
+{{ form_javascript(tri_form) }}
+{{ form_javascript(tag_search) }}

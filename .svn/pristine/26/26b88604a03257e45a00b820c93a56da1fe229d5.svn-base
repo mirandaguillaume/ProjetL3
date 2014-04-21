@@ -1,0 +1,71 @@
+imports:
+    - { resource: config.yml }
+
+swiftmailer:
+    delivery_address: guillaume11miranda@gmail.com
+
+framework:
+    router:
+        resource: "%kernel.root_dir%/config/routing_dev.yml"
+        strict_requirements: true
+    profiler: { only_exceptions: false }
+
+web_profiler:
+    toolbar: true
+    intercept_redirects: false
+
+monolog:
+    handlers:
+        main:
+            type:  stream
+            path:  "%kernel.logs_dir%/%kernel.environment%.log"
+            level: debug
+        firephp:
+            type:  firephp
+            level: info
+        chromephp:
+            type:  chromephp
+            level: info
+
+assetic:
+    use_controller: true
+
+#swiftmailer:
+#   delivery_address: guillaume11miranda@gmail.com
+
+bazinga_faker:
+    orm: doctrine
+    locale: fr_FR
+    entities:
+        ProjetL3\GroupeBundle\Entity\Groupe:
+            number: 10
+            custom_formatters:
+                nom: { method: word, unique: true }
+        ProjetL3\ListeBundle\Entity\Liste:
+            number: 10
+            custom_formatters:
+                nom: { method: word, unique: true }
+        ProjetL3\TagBundle\Entity\Tag:
+            number: 30
+            custom_formatters:
+                nom: { method: word, unique: true }
+        ProjetL3\UserBundle\Entity\User:
+            number: 50
+            custom_formatters:
+                username: { method: userName, unique: true }
+                email: { method: safeEmail, unique: true }
+                nom: { method: lastName }
+                prenom: { method: firstName }
+                freqActu: { method: randomElement, parameters: [ [ 'jour','semaine','aucune' ] ] }
+        ProjetL3\LienBundle\Entity\Lien:
+            number: 60
+            custom_formatters:
+                url: { method: url, unique: true }
+                nom: { method: word, unique: true }
+                nb_clics: { method: randomNumber, parameters: [ 0, 10 ] }
+                nb_votes: { method: randomNumber, parameters: [ 0, 30 ] }
+                date: { method: dateTime }
+fos_user:
+    registration:
+            confirmation:
+                enabled: false

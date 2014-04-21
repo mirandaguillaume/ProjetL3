@@ -1,0 +1,58 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>Groupe</h1>
+
+    <table class="record_properties">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ entity.id }}</td>
+            </tr>
+            <tr>
+                <th>Nom</th>
+                <td>{{ entity.nom }}</td>
+            </tr>
+            <tr>
+                <th>Utilisateurs</th>
+                <table class="record_properties">
+                    <tbody>
+                        {% for user in entity.users %}
+                        <tr>
+                            <td>{{ user.username }}</td>
+                            <td><a href={{ path('groupe_delete_user', { groupe_id : entity.id, user_id : user.id }) }}> Supprimer l'utilisateur</a></td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </tr>
+            <tr>
+                <th>Admins</th>
+                <table class="record_properties">
+                    <tbody>
+                    {% for admin in entity.admins %}
+                        <tr>
+                            <td>{{ admin.username }}</td>
+                            <td><a href={{ path('groupe_delete_admin', { groupe_id : entity.id, admin_id : admin.id }) }}>Supprimer l'administrateur</a></td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </tr>
+        </tbody>
+    </table>
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('groupe') }}">
+            Back to the list
+        </a>
+    </li>
+    <li>
+        <a href="{{ path('groupe_edit', { 'id': entity.id }) }}">
+            Edit
+        </a>
+    </li>
+    <li>{{ form(delete_form) }}</li>
+</ul>
+{% endblock %}

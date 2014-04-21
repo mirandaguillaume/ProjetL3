@@ -1,0 +1,9 @@
+ProjetL3UserBundle_user:
+        resource: "@ProjetL3UserBundle/Resources/config/routing/user.yml"
+        prefix:   /user
+
+
+lister_filtre:
+    pattern: /theme_filter
+    defaults: { _controller:"ProjetL3UserBundle:Default:listeTheme" }
+    requirements: { _method: POST }

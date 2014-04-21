@@ -1,0 +1,14 @@
+{% extends '::base.html.twig' %}
+
+{% block body %}
+
+    <p>Voulez-vous supprimer le groupe {{ entity.nom }}?</p>
+    <ul>
+        <li>{{ form(delete_form) }}</li>
+        <li>
+            <a href="{{ path('groupe_show', {id : entity.id}) }}">Retour à la page du groupe {{ entity.nom }}</a>
+        </li>
+    </ul>
+
+
+{% endblock %}

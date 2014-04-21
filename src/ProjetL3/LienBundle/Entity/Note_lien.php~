@@ -1,0 +1,96 @@
+<?php
+
+namespace ProjetL3\LienBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Note_lien
+ */
+class Note_lien
+{
+    /**
+     * @var string
+     */
+    private $note;
+
+    /**
+     * @var \ProjetL3\UserBundle\Entity\User
+     */
+    private $user;
+
+    /**
+     * @var \ProjetL3\LienBundle\Entity\Lien
+     */
+    private $lien;
+
+
+    /**
+     * Set note
+     *
+     * @param string $note
+     * @return Note_lien
+     */
+    public function setNote($note)
+    {
+        $this->note = $note;
+    
+        return $this;
+    }
+
+    /**
+     * Get note
+     *
+     * @return string 
+     */
+    public function getNote()
+    {
+        return $this->note;
+    }
+
+    /**
+     * Set user
+     *
+     * @param \ProjetL3\UserBundle\Entity\User $user
+     * @return Note_lien
+     */
+    public function setUser(\ProjetL3\UserBundle\Entity\User $user = null)
+    {
+        $this->user = $user;
+    
+        return $this;
+    }
+
+    /**
+     * Get user
+     *
+     * @return \ProjetL3\UserBundle\Entity\User 
+     */
+    public function getUser()
+    {
+        return $this->user;
+    }
+
+    /**
+     * Set lien
+     *
+     * @param \ProjetL3\LienBundle\Entity\Lien $lien
+     * @return Note_lien
+     */
+    public function setLien(\ProjetL3\LienBundle\Entity\Lien $lien = null)
+    {
+        $this->lien = $lien;
+    
+        return $this;
+    }
+
+    /**
+     * Get lien
+     *
+     * @return \ProjetL3\LienBundle\Entity\Lien 
+     */
+    public function getLien()
+    {
+        return $this->lien;
+    }
+}

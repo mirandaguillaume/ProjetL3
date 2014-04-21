@@ -1,0 +1,11 @@
+ProjetL3\GroupeBundle\Entity\Groupe:
+    properties:
+        nom:
+            - NotBlank : ~
+        admins:
+            - Count:
+                min: 1
+                minMessage: "Il doit rester au moins un administrateur"
+
+    constraints:
+        - Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity : {fields : [nom], message : "Ce groupe existe déjà" }

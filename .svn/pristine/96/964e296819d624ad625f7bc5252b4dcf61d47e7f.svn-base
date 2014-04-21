@@ -1,0 +1,4 @@
+ProjetL3\UserBundle\Entity\User:
+    properties:
+        freq_actu:
+          - Choice: { choices: [mois, jour, null], message: Choisir une fréquence d'envoi des news. }

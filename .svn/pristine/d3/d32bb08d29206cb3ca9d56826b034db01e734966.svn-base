@@ -1,0 +1,41 @@
+{% extends '::base.html.twig' %}
+
+
+{% block body %}
+    {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+        <div>
+            <section id="public_feed">
+
+                <div class="box colborder">
+                    <h1>Public Feed</h1>
+                    <h1>Liste des liens</h1>
+                    <ul>
+                        {% for lien in liens|sort %}
+                            <div>
+                                <strong>
+                                    <a href="{{ path('lien_show', {id : lien.id}) }}">{{ lien.nom }}</a>
+                                </strong>
+                                <br> description : <a href="{{ lien.url }}"> {{ lien.url }} </a>
+                                <br> ___________________________________________________
+                            </div>
+                        {% endfor %}
+                    </ul>
+                </div>
+
+            </section>
+            <section class="users">
+                <div class="box colborder">
+                    <h1>Group Feed</h1>
+                        publication des liens avec l'id du groupe auquel appartient lutilisateur connecté
+                </div>
+
+            </section>
+        </div>
+    {% else %}
+        <div class="bouton_insription">
+            <label class="inscription">
+                <input type="button" name="submit" value="S'inscrire" onclick="self.location.href='{{ path('fos_user_registration_register') }}'">
+            </label>
+        </div>
+    {% endif %}
+{% endblock %}

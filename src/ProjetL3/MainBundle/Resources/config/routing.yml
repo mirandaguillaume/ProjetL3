@@ -1,0 +1,13 @@
+projet_l3_main_homepage:
+    pattern:  /
+    defaults: { _controller: ProjetL3MainBundle:Default:index }
+
+trier:
+    pattern: /trier
+    defaults: { _controller:"ProjetL3MainBundle:Default:Trier" }
+    requirements: { _method: POST }
+
+tags_filtre:
+    pattern: /tags_filtre
+    defaults: { _controller:"ProjetL3MainBundle:Default:tagsFiltre" }
+    requirements: { _method: POST }

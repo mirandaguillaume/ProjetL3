@@ -1,0 +1,46 @@
+imports:
+    - { resource: config.yml }
+
+framework:
+    router:
+        resource: "%kernel.root_dir%/config/routing_dev.yml"
+        strict_requirements: true
+    profiler: { only_exceptions: false }
+
+web_profiler:
+    toolbar: true
+    intercept_redirects: false
+
+monolog:
+    handlers:
+        main:
+            type:  stream
+            path:  "%kernel.logs_dir%/%kernel.environment%.log"
+            level: debug
+        firephp:
+            type:  firephp
+            level: info
+        chromephp:
+            type:  chromephp
+            level: info
+
+assetic:
+    use_controller: true
+
+#swiftmailer:
+#   delivery_address: guillaume11miranda@gmail.com
+
+bazinga_faker:
+    orm: doctrine
+    entities:
+        ProjetL3\LienBundle\Entity\Lien:
+            number: 100
+            custom_formatters:
+                url: { method: url }
+                nom: { method: word }
+
+
+fos_user:
+    registration:
+            confirmation:
+                enabled: false

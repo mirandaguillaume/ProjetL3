@@ -1,0 +1,21 @@
+<?php
+
+namespace ProjetL3\UserBundle\Controller;
+
+use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+
+class DefaultController extends Controller
+{
+    public function bibliothequeAction()
+    {
+        $user = $this->getUser()->getLiens();
+        
+        if (!$user) {
+            throw $this->createNotFoundException('Unable to find User entity.');
+        }
+
+        return $this->render('ProjetL3UserBundle:Default:bibliotheque.html.twig', array(
+            'liens' => $user,
+        ));
+    }
+}

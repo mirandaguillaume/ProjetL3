@@ -1,0 +1,30 @@
+liste:
+    pattern:  /
+    defaults: { _controller: "ProjetL3ListeBundle:Liste:index" }
+
+liste_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "ProjetL3ListeBundle:Liste:show" }
+
+liste_new:
+    pattern:  /new
+    defaults: { _controller: "ProjetL3ListeBundle:Liste:new" }
+
+liste_create:
+    pattern:  /create
+    defaults: { _controller: "ProjetL3ListeBundle:Liste:create" }
+    requirements: { _method: post }
+
+liste_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "ProjetL3ListeBundle:Liste:edit" }
+
+liste_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "ProjetL3ListeBundle:Liste:update" }
+    requirements: { _method: post|put }
+
+liste_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "ProjetL3ListeBundle:Liste:delete" }
+    requirements: { _method: post|delete }

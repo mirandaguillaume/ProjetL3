@@ -1,0 +1,7 @@
+{% extends '@ProjetL3Lien/Lien/lien_base.html.twig' %}
+
+{% block body %}
+
+{{ form(form) }}
+
+{% endblock %}

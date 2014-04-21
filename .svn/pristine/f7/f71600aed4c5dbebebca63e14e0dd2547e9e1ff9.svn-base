@@ -1,0 +1,43 @@
+{% extends '::base.html.twig' %}
+
+
+{% block body %}
+    <div>
+        <section id="public_feed">
+
+            <div class="box colborder">
+                <h1>Public Feed</h1>
+                <h1>Liste des liens</h1>
+                <ul>
+                    {% for lien in liens %}
+                        <div>
+                            <strong>
+                                <a href="{{ path('lien_show', {id : lien.id}) }}">{{ lien.nom }}</a>
+                            </strong>
+                            , description : <a href="{{ lien.url }}"> {{ lien.url }} </a>
+                            <p>___________________________________________________</p>
+
+                        </div>
+                    {% endfor %}
+                </ul>
+            </div>
+
+        </section>
+        <section class="users">
+            <div class="box colborder">
+                <h1>Group Feed</h1>
+                <h1>Liste des membres</h1>
+                <ul>
+                    {% for user in users %}
+                        <div>
+                            <strong>
+                                <a href="{{ path('fos_user_profile_show', {id : user.id}) }}">{{ user.nom }}</a>
+                            </strong>
+                        </div>
+                    {% endfor %}
+                </ul>
+            </div>
+
+        </section>
+    </div>
+{% endblock %}

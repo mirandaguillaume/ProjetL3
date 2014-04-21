@@ -1,0 +1,18 @@
+ProjetL3\MainBundle\Entity\Parameters:
+    type: entity
+    table: null
+    repositoryClass: ProjetL3\MainBundle\Entity\ParametersRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        noteMax:
+            type: decimal
+            precision: 1
+            column: note_max
+        votesMax:
+            type: integer
+            column: votes_max
+    lifecycleCallbacks: {  }

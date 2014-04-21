@@ -1,0 +1,19 @@
+{{ form_stylesheet(notation) }}
+
+<div>
+    <strong>
+        <a href="{{ path('lien_show', {id : lien.id}) }}">{{ lien.nom }}</a>
+    </strong>
+    <br> description : <a href="{{ lien.url }}"> {{ lien.url }} </a>
+    {{ form(notation) }}
+    {% if lien.noteMoyenne != 0 %}
+        <div>
+            Note moyenne
+            <div>{{ lien.noteMoyenne|star_rating }}</div>
+        </div>
+    {% endif %}
+    <br> ___________________________________________________
+
+</div>
+
+{{ form_javascript(notation) }}

@@ -1,0 +1,20 @@
+{% extends '::base.html.twig' %}
+
+{% block stylesheets %}
+    {% stylesheets 'bundles/projetl3main/select2-3.4.5/select2.css'
+    'bundles/projetl3main/jquery-ui-1.10.4.custom/css/ui-lightness/jquery-ui-1.10.4.custom.css'
+    filter='cssrewrite'
+    %}
+    <link rel="stylesheet" href="{{ asset_url }}" />
+    {{ form_stylesheet(form) }}
+    {% endstylesheets %}
+{% endblock %}
+
+{% block javascripts %}
+    {% javascripts '@ProjetL3MainBundle/Resources/public/jquery-ui-1.10.4.custom/js/jquery-1.10.2.js'
+    '@ProjetL3MainBundle/Resources/public/jquery-ui-1.10.4.custom/js/jquery-ui-1.10.4.custom.js'
+    '@ProjetL3MainBundle/Resources/public/select2-3.4.5/select2.js' %}
+    <script type="text/javascript" src="{{ asset_url }}"></script>
+    {{ form_javascript(form) }}
+    {% endjavascripts %}
+{% endblock %}

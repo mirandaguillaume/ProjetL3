@@ -1,0 +1,3 @@
+projet_l3_main_homepage:
+    pattern:  /
+    defaults: { _controller: ProjetL3MainBundle:Default:index }

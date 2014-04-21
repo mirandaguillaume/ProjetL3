@@ -1,0 +1,41 @@
+ProjetL3\UserBundle\Entity\Bibliotheque:
+    type: entity
+    table: null
+    repositoryClass: ProjetL3\UserBundle\Entity\BibliothequeRepository
+    id:
+        id:
+            type: integer
+            generator:
+                strategy: AUTO
+    fields:
+        partage:
+            type: boolean
+            nullable: false
+
+    manyToOne:
+        user:
+            targetEntity: ProjetL3\UserBundle\Entity\User
+            inversedBy: bibliotheque
+        lien:
+            targetEntity: ProjetL3\LienBundle\Entity\Lien
+            inversedBy: bibliotheques
+
+    manyToMany:
+        groupes:
+            cascade: [ "persist", "merge" ]
+            targetEntity: ProjetL3\GroupeBundle\Entity\Groupe
+            inversedBy: partages
+            joinTable:
+                name: partage_groupe
+                joinColumns:
+                    biblio_id:
+                        referencedColumnName: id
+                inverseJoinColumns:
+                    groupe_id:
+                        referencedColumnName: id
+
+    uniqueConstraints:
+        unique_lien_user:
+            columns: [user_id, lien_id]
+
+    lifecycleCallbacks: {  }

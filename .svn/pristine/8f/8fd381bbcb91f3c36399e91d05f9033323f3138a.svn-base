@@ -1,0 +1,21 @@
+<?php
+
+namespace ProjetL3\MainBundle\Controller;
+
+use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+
+class DefaultController extends Controller
+{
+    public function indexAction()
+    {
+        $em = $this->getDoctrine()->getManager();
+
+        $groupes = $em->getRepository('ProjetL3UserBundle:Bibliotheque')->findByPartage(true);
+
+       // $users = $em->getRepository('ProjetL3UserBundle:User')->findAll();
+        return $this->render('ProjetL3MainBundle:Default:index.html.twig',array(
+            'partage_public' => $groupes,
+           // 'users'=> $users,
+        ));
+    }
+}

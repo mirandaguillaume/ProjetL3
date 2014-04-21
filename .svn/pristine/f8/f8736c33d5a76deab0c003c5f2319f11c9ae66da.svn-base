@@ -1,0 +1,39 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>Groupe</h1>
+
+    <table class="record_properties">
+        <tbody>
+        <tr>
+            <th>Nom</th>
+            <td>{{ entity.nom }}</td>
+        </tr>
+        <tr>
+            <th>Nombre de membres</th>
+            <td>{{ entity.users|length }}</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <ul class="record_actions">
+        <li>
+            <a href="{{ path('groupe_show_members', { id : entity.id }) }}">
+                Liste des membres
+            </a>
+        </li>
+        {% if app.user in entity.users %}
+            <li>
+                <a href="{{ path('groupe_edit', { 'id': entity.id }) }}">
+                    Changer le nom du groupe
+                </a>
+            </li>
+        {% endif %}
+        <li>
+
+            <a href="{{ path('groupe') }}">
+                Retour à la liste des groupes
+            </a>
+        </li>
+    </ul>
+{% endblock %}

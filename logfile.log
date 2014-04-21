@@ -1,0 +1,3880 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<log>
+<logentry
+   revision="35">
+<author>marine.david</author>
+<date>2014-03-14T17:20:57.117986Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/src/ProjetL3/MainBundle/Resources/views/Default/index.html.twig</path>
+<path
+   action="M"
+   kind="file">/src/ProjetL3/MainBundle/Controller/DefaultController.php</path>
+<path
+   action="M"
+   kind="file">/src/ProjetL3/MainBundle/Resources/config/routing.yml</path>
+</paths>
+<msg>création page d'accueil</msg>
+</logentry>
+<logentry
+   revision="34">
+<author>guillaume.miranda</author>
+<date>2014-03-14T17:17:21.941159Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/src/ProjetL3/GroupeBundle/Resources/config/routing/groupe.yml</path>
+<path
+   kind="file"
+   action="M">/app/config/security.yml</path>
+<path
+   action="M"
+   kind="file">/app/Resources/views/base.html.twig</path>
+<path
+   kind="file"
+   action="M">/src/ProjetL3/GroupeBundle/Resources/views/Groupe/edit.html.twig</path>
+<path
+   action="M"
+   kind="file">/src/ProjetL3/GroupeBundle/Controller/GroupeController.php</path>
+<path
+   action="M"
+   kind="file">/src/ProjetL3/GroupeBundle/Resources/views/Groupe/listing_users.html.twig</path>
+</paths>
+<msg>Ajout du login de base 
+</msg>
+</logentry>
+<logentry
+   revision="33">
+<author>remi.piau</author>
+<date>2014-03-14T17:12:53.428784Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/src/ProjetL3/LienBundle/Form/LienType.php</path>
+</paths>
+<msg>ajout l'appartenance a une liste lors de la creation d'un lien</msg>
+</logentry>
+<logentry
+   revision="32">
+<author>remi.piau</author>
+<date>2014-03-14T17:11:52.878272Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/src/ProjetL3/LienBundle/Resources/config/doctrine/Lien.orm.yml</path>
+</paths>
+<msg>Ajout de la relation manytomany entre lien et liste</msg>
+</logentry>
+<logentry
+   revision="31">
+<author>remi.piau</author>
+<date>2014-03-14T17:10:58.744574Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/src/ProjetL3/LienBundle/Entity/Lien.php</path>
+</paths>
+<msg>ajout de l'attribut listes</msg>
+</logentry>
+<logentry
+   revision="30">
+<author>remi.piau</author>
+<date>2014-03-14T16:37:56.617106Z</date>
+<paths>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/ListeBundle/Tests/Controller/ListeControllerTest.php</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/TagBundle/Tests/Controller/TagControllerTest.php</path>
+</paths>
+<msg>Creation des controller test de liste et de tag</msg>
+</logentry>
+<logentry
+   revision="29">
+<author>remi.piau</author>
+<date>2014-03-14T16:37:02.512266Z</date>
+<paths>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/ListeBundle/Resources/views/Liste/new.html.twig</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/ListeBundle/Resources/views/Liste/show.html.twig</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/ListeBundle/Resources/views/Liste</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/ListeBundle/Resources/views/Liste/edit.html.twig</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/ListeBundle/Resources/views/Liste/index.html.twig</path>
+</paths>
+<msg>Creation des vues de liste</msg>
+</logentry>
+<logentry
+   revision="28">
+<author>remi.piau</author>
+<date>2014-03-14T16:36:20.978319Z</date>
+<paths>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/TagBundle/Resources/views/Tag</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/TagBundle/Resources/views/Tag/edit.html.twig</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/TagBundle/Resources/views/Tag/index.html.twig</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/TagBundle/Resources/views/Tag/new.html.twig</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/TagBundle/Resources/views/Tag/show.html.twig</path>
+</paths>
+<msg>Creation des vue de tag</msg>
+</logentry>
+<logentry
+   revision="27">
+<author>remi.piau</author>
+<date>2014-03-14T16:33:58.656552Z</date>
+<paths>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/ListeBundle/Controller/ListeController.php</path>
+</paths>
+<msg>Creation de liste controller</msg>
+</logentry>
+<logentry
+   revision="26">
+<author>remi.piau</author>
+<date>2014-03-14T16:33:26.059298Z</date>
+<paths>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/TagBundle/Controller/TagController.php</path>
+</paths>
+<msg>Creation de tag controller</msg>
+</logentry>
+<logentry
+   revision="25">
+<author>remi.piau</author>
+<date>2014-03-14T16:04:14.945509Z</date>
+<paths>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/TagBundle/Resources/config/routing/tag.yml</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/TagBundle/Form</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/TagBundle/Resources/config/routing</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/TagBundle/Form/TagType.php</path>
+<path
+   action="M"
+   kind="file">/src/ProjetL3/TagBundle/Resources/config/routing.yml</path>
+</paths>
+<msg>Ajout du Form et des routing</msg>
+</logentry>
+<logentry
+   revision="24">
+<author>remi.piau</author>
+<date>2014-03-14T15:57:50.774861Z</date>
+<paths>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/ListeBundle/Resources/config/routing</path>
+<path
+   kind="file"
+   action="M">/src/ProjetL3/ListeBundle/Resources/config/routing.yml</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/ListeBundle/Resources/config/routing/liste.yml</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/ListeBundle/Form/ListeType.php</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/ListeBundle/Form</path>
+</paths>
+<msg>ajout du form et des routing</msg>
+</logentry>
+<logentry
+   revision="23">
+<author>guillaume.miranda</author>
+<date>2014-03-14T15:50:34.950285Z</date>
+<paths>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/css/ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/select2-3.4.5/select2_locale_eu.js</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/i18n</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/i18n/jquery.ui.datepicker-fr.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/select2-3.4.5/select2_locale_vi.js</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/animate</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/accordion/sortable.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/i18n/jquery.ui.datepicker-tj.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/i18n/jquery.ui.datepicker-es.min.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/droppable/images/high_tatras4_min.jpg</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/base/jquery.ui.all.css</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui.core.jquery.json</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/i18n/jquery.ui.datepicker-is.min.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/i18n/jquery.ui.datepicker-ca.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/jquery.ui.sortable.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/i18n/jquery.ui.datepicker-ms.min.js</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/i18n/jquery.ui.datepicker-sv.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/accordion/collapsible.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/i18n/jquery.ui.datepicker-ka.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/dialog/modal.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/i18n/jquery.ui.datepicker-he.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/jquery.ui.resizable.min.js</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/accordion</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/i18n/jquery.ui.datepicker-lb.min.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/base/minified/images/ui-icons_cd0a0a_256x240.png</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/tooltip/ajax/content2.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/i18n/jquery.ui.datepicker-zh-TW.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/jquery.ui.selectable.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/i18n/jquery.ui.datepicker-fr.min.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/i18n/jquery.ui.datepicker-rm.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/i18n/jquery.ui.datepicker-zh-CN.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/base/images/ui-bg_flat_75_ffffff_40x100.png</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/ui-lightness/images/ui-icons_ffffff_256x240.png</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/datepicker/date-range.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/base/jquery.ui.spinner.css</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/addClass/index.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/datepicker/inline.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/jquery.ui.datepicker.min.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/css/ui-lightness/images/ui-icons_ffffff_256x240.png</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/i18n/jquery.ui.datepicker-id.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui.draggable.jquery.json</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/ui-lightness/images/ui-bg_glass_100_fdf5ce_1x400.png</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/select2-3.4.5/select2_locale_mk.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/i18n/jquery.ui.datepicker-fi.min.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/base/minified/images/ui-bg_flat_75_ffffff_40x100.png</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/select2-3.4.5/select2.png</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/jquery.ui.tabs.min.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/i18n/jquery.ui.datepicker-et.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/datepicker/alt-field.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/select2-3.4.5/select2_locale_ro.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/i18n/jquery.ui.datepicker-sl.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/i18n/jquery.ui.datepicker-vi.min.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/accordion/default.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/i18n/jquery.ui.datepicker-hy.min.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/jquery.ui.effect-transfer.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/droppable/images/high_tatras.jpg</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/i18n/jquery.ui.datepicker-en-NZ.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/images/demo-spindown-open.gif</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/i18n/jquery.ui.datepicker-sq.min.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/ui-lightness/minified/images/ui-icons_ffd27a_256x240.png</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/ui-lightness/minified/jquery.ui.spinner.min.css</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/dialog/modal-form.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/base/minified/jquery.ui.slider.min.css</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/sortable/default.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/ui-lightness/minified/images/ui-bg_diagonals-thick_18_b81900_40x40.png</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/ui-lightness/jquery.ui.progressbar.css</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/datepicker/other-months.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/docs/slider.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/show/default.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/select2-3.4.5/select2_locale_hr.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/jquery.ui.dialog.js</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/ui-lightness/minified</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/base/jquery.ui.menu.css</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/ui-lightness/jquery.ui.menu.css</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/spinner/time.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/dialog/modal-message.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/ui-lightness/minified/jquery.ui.theme.min.css</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/ui-lightness/minified/images/ui-icons_ef8c08_256x240.png</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/jquery-ui.custom.min.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/datepicker/jquery.ui.datepicker-ar.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/autocomplete/search.php</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/removeClass/index.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/jquery.ui.effect-transfer.min.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/draggable/default.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/jquery.ui.effect-scale.min.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/select2-3.4.5/select2_locale_ua.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/addClass/default.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/resizable/default.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/jquery.ui.accordion.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/i18n/jquery.ui.datepicker-eo.min.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/ui-lightness/jquery.ui.selectable.css</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/i18n/jquery.ui.datepicker-az.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/ui-lightness/minified/jquery.ui.dialog.min.css</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/external/jquery.mousewheel.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/ui-lightness/minified/jquery.ui.accordion.min.css</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/removeClass</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/hide/index.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/i18n/jquery.ui.datepicker-lv.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui.effect-slide.jquery.json</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/css/ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/i18n/jquery.ui.datepicker-da.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/ui-lightness/jquery.ui.spinner.css</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/docs/menu.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/ui-lightness/minified/images/ui-icons_228ef1_256x240.png</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/base/minified/images/ui-icons_454545_256x240.png</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/select2-3.4.5/select2_locale_el.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/i18n/jquery.ui.datepicker-af.min.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/i18n/jquery.ui.datepicker-fi.js</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/menu</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/i18n/jquery.ui.datepicker-ta.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/toggle/default.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/ui-lightness/images/ui-bg_diagonals-thick_20_666666_40x40.png</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/index.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/i18n/jquery.ui.datepicker-km.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/i18n/jquery.ui.datepicker-eu.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/base/minified/images/ui-bg_flat_0_aaaaaa_40x100.png</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/spinner</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/ui-lightness/minified/images/ui-bg_highlight-soft_100_eeeeee_1x100.png</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/docs/explode-effect.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/ui-lightness/minified/images/ui-icons_222222_256x240.png</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/progressbar/default.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/i18n/jquery.ui.datepicker-vi.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/jquery.ui.droppable.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/i18n/jquery.ui.datepicker-nn.min.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/resizable/snap-to-grid.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/docs/size-effect.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/autocomplete/london.xml</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/tabs</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/ui-lightness</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui.dialog.jquery.json</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/base/minified/jquery.ui.button.min.css</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/datepicker/dropdown-month-year.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/css/ui-lightness/jquery-ui-1.10.4.custom.min.css</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/ui-lightness/images</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/dialog</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/i18n/jquery.ui.datepicker-be.min.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/docs/sortable.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/css/ui-lightness/images/ui-bg_glass_65_ffffff_1x400.png</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/i18n/jquery.ui.datepicker-nl-BE.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/i18n/jquery.ui.datepicker-sv.min.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/draggable/delay-start.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/images/demo-config-on-tile.gif</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/docs/clip-effect.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui.button.jquery.json</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/select2-3.4.5/select2_locale_ko.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/sortable/connect-lists-through-tabs.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/ui-lightness/minified/jquery.ui.tabs.min.css</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/tabs/ajax/content1.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/widget/default.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/ui-lightness/minified/jquery.ui.tooltip.min.css</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/jquery.ui.effect-slide.min.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/ui-lightness/jquery.ui.autocomplete.css</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/resizable/delay-start.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/slider/hotelrooms.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/i18n/jquery.ui.datepicker-km.min.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/button/toolbar.html</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/docs</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/i18n/jquery.ui.datepicker-zh-TW.min.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/i18n/jquery.ui.datepicker-hu.min.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/sortable/index.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/docs/accordion.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/select2-3.4.5/select2-bootstrap.css</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/base/minified/images/ui-bg_highlight-soft_75_cccccc_1x100.png</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/base/images/ui-icons_888888_256x240.png</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/tooltip/tracking.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/select2-3.4.5/select2_locale_ar.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/jquery.ui.core.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/datepicker/multiple-calendars.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/tabs/index.html</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/draggable</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/accordion/hoverintent.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/i18n/jquery.ui.datepicker-mk.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/ui-lightness/minified/images/ui-bg_glass_65_ffffff_1x400.png</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/select2-3.4.5/release.sh</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/selectable/index.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/MIT-LICENSE.txt</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/i18n/jquery.ui.datepicker-et.min.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/i18n/jquery.ui.datepicker-uk.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/i18n/jquery.ui.datepicker-ro.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/i18n/jquery.ui.datepicker-pl.min.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/tooltip/custom-animation.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/select2-3.4.5/select2_locale_fa.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/i18n/jquery.ui.datepicker-it.min.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/jquery.ui.position.min.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/i18n/jquery.ui.datepicker-af.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/base/jquery.ui.resizable.css</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/tooltip/images/st-stephens.jpg</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui.accordion.jquery.json</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/accordion/no-auto-height.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/i18n/jquery.ui.datepicker-lb.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/slider/colorpicker.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui.droppable.jquery.json</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/css/ui-lightness</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/button/splitbutton.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/jquery.ui.effect.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/draggable/scroll.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/jquery.ui.tooltip.min.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/docs/mouse.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/i18n/jquery.ui.datepicker-hr.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/autocomplete/combobox.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/i18n/jquery.ui.datepicker-bs.min.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/docs/puff-effect.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/position/index.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/i18n/jquery.ui.datepicker-mk.min.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/draggable/sortable.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/i18n/jquery.ui.datepicker-uk.min.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/animate/index.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/i18n/jquery.ui.datepicker-be.js</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/tooltip</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/position/images/earth.jpg</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/base/minified/jquery.ui.resizable.min.css</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/ui-lightness/images/ui-bg_flat_10_000000_40x100.png</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/css/ui-lightness/images/ui-bg_gloss-wave_35_f6a828_500x100.png</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/select2-3.4.5/select2_locale_nl.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/base/minified/jquery.ui.progressbar.min.css</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/dialog/index.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/ui-lightness/images/ui-icons_ffd27a_256x240.png</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/resizable/synchronous-resize.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/droppable/photo-manager.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/docs/tooltip.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/toggleClass/index.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/css/ui-lightness/images/ui-icons_ffd27a_256x240.png</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/i18n</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/base/images/ui-bg_glass_65_ffffff_1x400.png</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/i18n/jquery.ui.datepicker-ky.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/select2-3.4.5/select2_locale_bg.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/ui-lightness/minified/images/animated-overlay.gif</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/i18n/jquery.ui.datepicker-fr-CA.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/ui-lightness/minified/jquery.ui.datepicker.min.css</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/jquery.ui.sortable.min.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/i18n/jquery.ui.datepicker-sr.min.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/external/globalize.culture.de-DE.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/ui-lightness/images/ui-icons_ef8c08_256x240.png</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/i18n/jquery.ui.datepicker-fa.min.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/droppable/default.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/jquery-1.10.2.js</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/docs/spinner.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/i18n/jquery.ui.datepicker-ja.min.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/i18n/jquery.ui.datepicker-el.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/Gruntfile.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/base/minified/jquery.ui.core.min.css</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/css/ui-lightness/images/ui-icons_ef8c08_256x240.png</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/base/minified/images/ui-bg_glass_65_ffffff_1x400.png</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/select2-3.4.5/select2_locale_is.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/i18n/jquery.ui.datepicker-ml.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/select2-3.4.5/select2_locale_en.js.template</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/select2-3.4.5/select2.jquery.json</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui.effect-blind.jquery.json</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui.widget.jquery.json</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/autocomplete/maxheight.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/slider/steps.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/js/jquery-1.10.2.js</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/select2-3.4.5</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/jquery-ui.custom.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/autocomplete/categories.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/sortable/portlets.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/base/images/ui-bg_glass_95_fef1ec_1x400.png</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/jquery.ui.effect-fold.min.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/i18n/jquery.ui.datepicker-fr-CA.min.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/animate/default.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/ui-lightness/images/ui-icons_228ef1_256x240.png</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/select2-3.4.5/bower.json</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/tabs/ajax/content2.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/i18n/jquery.ui.datepicker-ko.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/docs/progressbar.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/resizable/aspect-ratio.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/draggable/events.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/select2-3.4.5/README.md</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/slider/range.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/base/minified/images/ui-bg_glass_95_fef1ec_1x400.png</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/css/ui-lightness/images/ui-icons_228ef1_256x240.png</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/select2-3.4.5/select2x2.png</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/i18n/jquery.ui.datepicker-th.min.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/i18n/jquery.ui.datepicker-ar-DZ.min.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/select2-3.4.5/select2_locale_de.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/i18n/jquery.ui.datepicker-pt-BR.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/position/cycler.html</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/progressbar</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/draggable/snap-to.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/ui-lightness/images/ui-icons_222222_256x240.png</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/progressbar/images</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/i18n/jquery.ui.datepicker-ar.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/select2-3.4.5/LICENSE</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/css/ui-lightness/images/ui-icons_222222_256x240.png</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/select2-3.4.5/select2_locale_hu.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/i18n/jquery.ui.datepicker-fo.min.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/datepicker/buttonbar.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/base/minified/images/ui-icons_222222_256x240.png</path>
+<path
+   kind="file"
+   action="M">/src/ProjetL3/GroupeBundle/Controller/GroupeController.php</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/i18n/jquery.ui.datepicker-zh-HK.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/i18n/jquery.ui.datepicker-no.min.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/i18n/jquery.ui.datepicker-ro.min.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/i18n/jquery.ui.datepicker-fa.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/ui-lightness/jquery.ui.resizable.css</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/progressbar/images/pbar-ani.gif</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/base/images/ui-icons_2e83ff_256x240.png</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/draggable/visual-feedback.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/jquery.ui.effect-shake.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/select2-3.4.5/select2_locale_gl.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/base/images/ui-bg_glass_55_fbf9ee_1x400.png</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/base/jquery.ui.core.css</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/ui-lightness/jquery.ui.core.css</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/i18n/jquery.ui.datepicker-hi.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/progressbar/index.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/i18n/jquery-ui-i18n.js</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/droppable</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/ui-lightness/minified/images/ui-bg_highlight-soft_75_ffe45c_1x100.png</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/resizable/visual-feedback.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/jquery.ui.effect-drop.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/base/jquery.ui.accordion.css</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/select2-3.4.5/select2_locale_it.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/spinner/currency.html</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/base/minified</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/select2-3.4.5/select2.css</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/jquery.ui.effect.min.js</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/datepicker/images</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/draggable/index.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/jquery.ui.effect-pulsate.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/slider/rangemin.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/base/minified/images/ui-bg_glass_55_fbf9ee_1x400.png</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/dialog/default.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/spinner/index.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/i18n/jquery.ui.datepicker-lv.min.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/docs/pulsate-effect.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/menu/default.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/tabs/manipulation.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/selectable/serialize.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/jquery.ui.effect-clip.min.js</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/position</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/jquery.ui.effect-shake.min.js</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/toggleClass</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/css/ui-lightness/images</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/autocomplete/remote-with-cache.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/images/demo-config-on.gif</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/i18n/jquery.ui.datepicker-nl.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui.effect-clip.jquery.json</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/i18n/jquery-ui-i18n.min.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/docs/tabs.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/docs/slide-effect.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/i18n/jquery.ui.datepicker-eu.min.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/docs/dialog.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/jquery.ui.menu.min.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/jquery.ui.effect-bounce.min.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/i18n/jquery.ui.datepicker-pt.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/slider/multiple-vertical.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/i18n/jquery.ui.datepicker-bg.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/js/jquery-ui-1.10.4.custom.min.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/datepicker/animation.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/resizable/helper.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/jquery.ui.slider.min.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/i18n/jquery.ui.datepicker-el.min.js</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/datepicker</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/i18n/jquery.ui.datepicker-is.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/tabs/mouseover.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/tooltip/default.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/i18n/jquery.ui.datepicker-ml.min.js</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/ui-lightness/minified/images</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/ui-lightness/images/ui-bg_highlight-soft_75_ffe45c_1x100.png</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/docs/highlight-effect.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/slider/rangemax.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui.effect.jquery.json</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/resizable/constrain-area.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/button/icons.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/jquery.ui.spinner.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/jquery.ui.resizable.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/docs/draggable.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/slider/index.html</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/tooltip/images</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/ui-lightness/minified/images/ui-bg_glass_100_f6f6f6_1x400.png</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/i18n/jquery.ui.datepicker-nb.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/base/images/ui-bg_glass_75_e6e6e6_1x400.png</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/docs/resizable.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/spinner/default.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/select2-3.4.5/select2-spinner.gif</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/select2-3.4.5/select2_locale_zh-TW.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/removeClass/default.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/select2-3.4.5/select2_locale_zh-CN.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/switchClass/default.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/droppable/images/high_tatras2_min.jpg</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/i18n/jquery.ui.datepicker-cs.min.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/ui-lightness/minified/images/ui-bg_gloss-wave_35_f6a828_500x100.png</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/jquery.ui.autocomplete.min.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/base/minified/jquery.ui.menu.min.css</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/jquery.ui.datepicker.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/base/minified/images/ui-bg_glass_75_e6e6e6_1x400.png</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/switchClass</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/base/images/ui-icons_cd0a0a_256x240.png</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/jquery.ui.draggable.min.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/docs/bounce-effect.html</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/i18n/jquery.ui.datepicker-de.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/jquery.ui.effect-clip.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/jquery.ui.spinner.min.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/resizable/animate.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/sortable/connect-lists.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/jquery.ui.tabs.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/jquery.ui.effect-slide.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/sortable/delay-start.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/i18n/jquery.ui.datepicker-nb.min.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/select2-3.4.5/select2_locale_pl.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/button/radio.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/i18n/jquery.ui.datepicker-hu.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/ui-lightness/images/ui-bg_diagonals-thick_18_b81900_40x40.png</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/css/ui-lightness/images/ui-bg_flat_10_000000_40x100.png</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/jquery.ui.menu.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/images/icon-docs-info.gif</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/menu/icons.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/css/ui-lightness/images/ui-bg_diagonals-thick_20_666666_40x40.png</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/select2-3.4.5/select2.min.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/i18n/jquery.ui.datepicker-hr.min.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/i18n/jquery.ui.datepicker-az.min.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui.tooltip.jquery.json</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/i18n/jquery.ui.datepicker-sq.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/docs/position.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/i18n/jquery.ui.datepicker-zh-HK.min.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui.autocomplete.jquery.json</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/i18n/jquery.ui.datepicker-ca.min.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/jquery.ui.slider.js</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/base/images</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/css/ui-lightness/images/ui-bg_highlight-soft_75_ffe45c_1x100.png</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/external/globalize.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/i18n/jquery.ui.datepicker-tr.min.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/ui-lightness/minified/jquery.ui.slider.min.css</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/images/demo-spindown-closed.gif</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/draggable/constrain-movement.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/i18n/jquery.ui.datepicker-cy-GB.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/i18n/jquery.ui.datepicker-ka.min.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/select2-3.4.5/select2_locale_cs.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/i18n/jquery.ui.datepicker-gl.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/base/images/ui-bg_highlight-soft_75_cccccc_1x100.png</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/i18n/jquery.ui.datepicker-hi.min.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/ui-lightness/jquery.ui.accordion.css</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/select2-3.4.5/select2_locale_no.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/spinner/decimal.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/i18n/jquery.ui.datepicker-it.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/i18n/jquery.ui.datepicker-sr-SR.min.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/base/minified/jquery.ui.accordion.min.css</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/base/minified/images</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/ui-lightness/minified/jquery.ui.selectable.min.css</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/jquery.ui.selectable.min.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/docs/jQuery.widget.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/draggable/cursor-style.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/datepicker/show-week.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/autocomplete/multiple-remote.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/ui-lightness/minified/images/ui-bg_flat_10_000000_40x100.png</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/jquery.ui.effect-scale.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/base/minified/jquery.ui.spinner.min.css</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/droppable/visual-feedback.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/datepicker/default.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/base/images/animated-overlay.gif</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/slider/side-scroll.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/tabs/vertical.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui.datepicker.jquery.json</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/i18n/jquery.ui.datepicker-eo.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/datepicker/localization.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/i18n/jquery.ui.datepicker-bs.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/autocomplete/images/jquery_32x32.png</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/hide</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/jquery.ui.effect-fade.min.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/droppable/images/high_tatras2.jpg</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/docs/fade-effect.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/tooltip/custom-content.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui.effect-shake.jquery.json</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/toggle</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/droppable/index.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui.tabs.jquery.json</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/select2-3.4.5/select2_locale_tr.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/README.md</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/selectable/default.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/effect</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/jquery.ui.widget.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui.position.jquery.json</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/i18n/jquery.ui.datepicker-bg.min.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/docs/fold-effect.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/jquery.ui.effect-blind.min.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/autocomplete/xml.html</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/autocomplete/images</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/docs/blind-effect.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/base/jquery.ui.dialog.css</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/jquery.ui.core.min.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/js/jquery-ui-1.10.4.custom.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/jquery.ui.progressbar.min.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/base/images/ui-icons_454545_256x240.png</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/i18n/jquery.ui.datepicker-nn.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/i18n/jquery.ui.datepicker-en-AU.min.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/css/ui-lightness/images/ui-bg_glass_100_fdf5ce_1x400.png</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/autocomplete/images/ui-anim_basic_16x16.gif</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/base/minified/jquery-ui.min.css</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/jquery.ui.dialog.min.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/ui-lightness/minified/jquery.ui.autocomplete.min.css</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/i18n/jquery.ui.datepicker-ko.min.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/autocomplete/images/transparent_1x1.png</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/effect/default.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/base/jquery.ui.button.css</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/docs/autocomplete.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/select2-3.4.5/select2_locale_ru.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/i18n/jquery.ui.datepicker-sr.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/ui-lightness/minified/jquery.ui.button.min.css</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/droppable/propagation.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/sortable/items.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui.effect-bounce.jquery.json</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/base/jquery.ui.tooltip.css</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/tooltip/index.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/jquery.ui.widget.min.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/sortable/display-grid.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/tabs/sortable.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/select2-3.4.5/select2_locale_th.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/autocomplete/index.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/progressbar/label.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui.effect-scale.jquery.json</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/base/minified/jquery.ui.dialog.min.css</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/external/globalize.culture.ja-JP.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/base/minified/jquery.ui.theme.min.css</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/base/jquery.ui.datepicker.css</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/external/qunit.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/base/jquery.ui.slider.css</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/AUTHORS.txt</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/docs/droppable.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/autocomplete/remote.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/i18n/jquery.ui.datepicker-de.min.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/jquery.ui.effect-fade.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/i18n/jquery.ui.datepicker-he.min.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/effect/index.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/autocomplete/images/sizzlejs_32x32.png</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/ui-lightness/jquery.ui.dialog.css</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/base/minified/jquery.ui.tooltip.min.css</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/ui-lightness/jquery-ui.css</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/button</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/tabs/ajax</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/css/ui-lightness/images/animated-overlay.gif</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/droppable/images</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/i18n/jquery.ui.datepicker-pl.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/i18n/jquery.ui.datepicker-ar-DZ.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/draggable/revert.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/images/calendar.gif</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/base/jquery.ui.base.css</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/ui-lightness/jquery.ui.base.css</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/ui-lightness/jquery.ui.button.css</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/datepicker/index.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/jquery.ui.droppable.min.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/base/minified/jquery.ui.datepicker.min.css</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/position/default.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/ui-lightness/minified/images/ui-bg_diagonals-thick_20_666666_40x40.png</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui.menu.jquery.json</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/i18n/jquery.ui.datepicker-ru.min.js</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/images/pbar-ani.gif</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/jquery.ui.progressbar.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/effect/easing.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/jquery.ui.tooltip.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/i18n/jquery.ui.datepicker-id.min.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/draggable/handle.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/i18n/jquery.ui.datepicker-fo.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/ui-lightness/minified/jquery.ui.core.min.css</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/i18n/jquery.ui.datepicker-cs.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/sortable/empty-lists.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/i18n/jquery.ui.datepicker-cy-GB.min.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/jquery.ui.effect-explode.min.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/jquery.ui.effect-highlight.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/droppable/images/high_tatras3.jpg</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/tabs/ajax.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/i18n/jquery.ui.datepicker-no.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/spinner/latlong.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/docs/drop-effect.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/i18n/jquery.ui.datepicker-nl.min.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/base/minified/images/ui-icons_888888_256x240.png</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui.effect-explode.jquery.json</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/base/minified/images/animated-overlay.gif</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/jquery.ui.button.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/resizable/max-min.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/select2-3.4.5/select2_locale_ja.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/ui-lightness/jquery.ui.slider.css</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/droppable/images/high_tatras_min.jpg</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/datepicker/images/calendar.gif</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/docs/datepicker.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/datepicker/jquery.ui.datepicker-fr.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/base/jquery.ui.tabs.css</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/selectable</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/ui-lightness/jquery.ui.tabs.css</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/ui-lightness/jquery.ui.tooltip.css</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/index.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/slider/slider-vertical.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/i18n/jquery.ui.datepicker-kk.min.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/droppable/images/high_tatras3_min.jpg</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/jquery.ui.effect-highlight.min.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/progressbar/indeterminate.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/datepicker/jquery.ui.datepicker-he.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/i18n/jquery.ui.datepicker-sk.min.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/docs/selectable.html</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/base</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/i18n/jquery.ui.datepicker-tr.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/base/images/ui-bg_flat_0_aaaaaa_40x100.png</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/jquery.ui.button.min.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/base/images/ui-bg_glass_75_dadada_1x400.png</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/docs/transfer-effect.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/select2-3.4.5/select2_locale_pt-PT.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/position/images/flight.jpg</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui.sortable.jquery.json</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/base/minified/jquery.ui.tabs.min.css</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui.effect-transfer.jquery.json</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/i18n/jquery.ui.datepicker-sr-SR.js</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/external</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/i18n/jquery.ui.datepicker-ar.min.js</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/addClass</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/select2-3.4.5/select2_locale_lt.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/jquery.ui.effect-bounce.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/jquery.ui.accordion.min.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/base/minified/images/ui-bg_glass_75_dadada_1x400.png</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/i18n/jquery.ui.datepicker-tj.min.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/slider/range-vertical.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/jquery.ui.effect-fold.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/i18n/jquery.ui.datepicker-ru.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/widget/index.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/i18n/jquery.ui.datepicker-da.min.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/button/default.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/button/checkbox.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/jquery.ui.effect-explode.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/select2-3.4.5/select2_locale_es.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/tooltip/images/tower-bridge.jpg</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/slider/default.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui.resizable.jquery.json</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/accordion/index.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/select2-3.4.5/select2_locale_sk.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/i18n/jquery.ui.datepicker-ta.min.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/select2-3.4.5/select2_locale_ms.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/i18n/jquery.ui.datepicker-th.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/jquery.ui.position.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui.mouse.jquery.json</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/widget</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/select2-3.4.5/select2_locale_pt-BR.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/external/jshint.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/i18n/jquery.ui.datepicker-ky.min.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/ui-lightness/images/ui-bg_gloss-wave_35_f6a828_500x100.png</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/docs/button.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/ui-lightness/minified/jquery.ui.resizable.min.css</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/select2-3.4.5/select2.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/datepicker/jquery.ui.datepicker-zh-TW.js</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/images</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/accordion/fillspace.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/select2-3.4.5/select2_locale_fr.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/i18n/jquery.ui.datepicker-nl-BE.min.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/ui-lightness/minified/images/ui-icons_ffffff_256x240.png</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/base/jquery-ui.css</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/position/images</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/droppable/images/high_tatras4.jpg</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/select2-3.4.5/select2_locale_ca.js</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/slider</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/tooltip/forms.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui.effect-fade.jquery.json</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/dialog/animated.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/ui-lightness/jquery.ui.datepicker.css</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/accordion/custom-icons.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/select2-3.4.5/select2_locale_sv.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/base/images/ui-icons_222222_256x240.png</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/select2-3.4.5/select2_locale_he.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/package.json</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui.selectable.jquery.json</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/demos.css</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/autocomplete/multiple.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/sortable/placeholder.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/switchClass/index.html</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/autocomplete</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/base/jquery.ui.progressbar.css</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/ui-lightness/images/animated-overlay.gif</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/jquery.ui.mouse.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/tooltip/custom-style.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/i18n/jquery.ui.datepicker-fr-CH.min.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui.effect-fold.jquery.json</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/base/jquery.ui.theme.css</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/tooltip/ajax/content1.html</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/position/images/rocket.jpg</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/ui-lightness/minified/jquery-ui.min.css</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/droppable/revert.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui.progressbar.jquery.json</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/autocomplete/custom-data.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/autocomplete/folding.html</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/css</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/show/index.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/select2-3.4.5/select2_locale_id.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/toggle/index.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/i18n/jquery.ui.datepicker-ja.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/i18n/jquery.ui.datepicker-pt-BR.min.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/hide/default.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/resizable/textarea.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/select2-3.4.5/select2_locale_et.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/datepicker/icon-trigger.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/docs/shake-effect.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/ui-lightness/minified/jquery.ui.progressbar.min.css</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/jquery.ui.mouse.min.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/css/ui-lightness/jquery-ui-1.10.4.custom.css</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/ui-lightness/jquery.ui.theme.css</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/tabs/ajax/content3-slow.php</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/base/minified/images/ui-icons_2e83ff_256x240.png</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/i18n/jquery.ui.datepicker-hy.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/ui-lightness/minified/jquery.ui.menu.min.css</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/button/index.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/tabs/collapsible.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/ui-lightness/images/ui-bg_glass_65_ffffff_1x400.png</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/autocomplete/default.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/css/ui-lightness/images/ui-bg_diagonals-thick_18_b81900_40x40.png</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/droppable/shopping-cart.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/resizable/index.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/i18n/jquery.ui.datepicker-en-GB.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui.effect-highlight.jquery.json</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/droppable/accepted-elements.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/toggleClass/default.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/selectable/display-grid.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/external/qunit.css</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/datepicker/date-formats.html</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui.spinner.jquery.json</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/base/jquery.ui.autocomplete.css</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/base/jquery.ui.selectable.css</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/tooltip/ajax</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/tabs/ajax/content4-broken.php</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/jquery.ui.effect-drop.min.js</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/show</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/i18n/jquery.ui.datepicker-lt.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/dialog/modal-confirmation.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/spinner/overflow.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/datepicker/min-max.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/i18n/jquery.ui.datepicker-rm.min.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/i18n/jquery.ui.datepicker-zh-CN.min.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/jquery.ui.effect-pulsate.min.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/jquery.ui.effect-blind.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/tabs/bottom.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/i18n/jquery.ui.datepicker-en-GB.min.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/i18n/jquery.ui.datepicker-fr-CH.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/docs/scale-effect.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/autocomplete/images/jqueryui_32x32.png</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/i18n/jquery.ui.datepicker-kk.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/i18n/jquery.ui.datepicker-en-AU.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/i18n/jquery.ui.datepicker-es.js</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/sortable</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/i18n/jquery.ui.datepicker-gl.min.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/jquery.ui.autocomplete.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui.slider.jquery.json</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/menu/index.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/i18n/jquery.ui.datepicker-sk.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/tabs/default.html</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/resizable</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/select2-3.4.5/select2_locale_lv.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/base/minified/jquery.ui.autocomplete.min.css</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/base/minified/jquery.ui.selectable.min.css</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/i18n/jquery.ui.datepicker-ms.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/ui-lightness/jquery.ui.all.css</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/jquery.ui.draggable.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/select2-3.4.5/select2_locale_da.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/autocomplete/remote-jsonp.html</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/i18n/jquery.ui.datepicker-sl.min.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/i18n/jquery.ui.datepicker-lt.min.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/themes/ui-lightness/minified/images/ui-bg_glass_100_fdf5ce_1x400.png</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui.effect-drop.jquery.json</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/i18n/jquery.ui.datepicker-pt.min.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/demos/tooltip/video-player.html</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/select2-3.4.5/select2_locale_fi.js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui/minified/i18n/jquery.ui.datepicker-en-NZ.min.js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/public/jquery-ui-1.10.4.custom/development-bundle/ui.effect-pulsate.jquery.json</path>
+</paths>
+<msg>Ajout des librairies extérieures</msg>
+</logentry>
+<logentry
+   revision="22">
+<author>remi.piau</author>
+<date>2014-03-14T15:49:17.510649Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/src/ProjetL3/ListeBundle/Entity/Liste.php</path>
+</paths>
+<msg>Ajout de l'attribut private $liens</msg>
+</logentry>
+<logentry
+   revision="21">
+<author>remi.piau</author>
+<date>2014-03-14T15:48:26.566749Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/src/ProjetL3/ListeBundle/Resources/config/doctrine/Liste.orm.yml</path>
+</paths>
+<msg>ajout de de la relation manytomany entre liste et lien</msg>
+</logentry>
+<logentry
+   revision="20">
+<author>marine.david</author>
+<date>2014-03-14T15:27:02.178956Z</date>
+<paths>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/LienBundle/Resources/views/Lien/show.html.twig</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/LienBundle/Resources/views/Lien</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/LienBundle/Resources/views/Lien/edit.html.twig</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/LienBundle/Resources/views/Lien/index.html.twig</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/LienBundle/Resources/views/Lien/new.html.twig</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/LienBundle/Tests/Controller/LienControllerTest.php</path>
+</paths>
+<msg>ajout des formulaires de Lien v1</msg>
+</logentry>
+<logentry
+   revision="19">
+<author>marine.david</author>
+<date>2014-03-14T15:24:01.252091Z</date>
+<paths>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/LienBundle/Form/LienType.php</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/LienBundle/Form</path>
+</paths>
+<msg>ajout des formulaires de Lien</msg>
+</logentry>
+<logentry
+   revision="18">
+<author>marine.david</author>
+<date>2014-03-14T15:20:59.090009Z</date>
+<paths>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/LienBundle/Resources/config/routing/lien.yml</path>
+<path
+   action="M"
+   kind="file">/src/ProjetL3/LienBundle/Controller/LienController.php</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/LienBundle/Resources/config/routing</path>
+<path
+   kind="file"
+   action="M">/src/ProjetL3/LienBundle/Resources/config/routing.yml</path>
+<path
+   kind="file"
+   action="M">/src/ProjetL3/LienBundle/Entity/Lien.php</path>
+</paths>
+<msg>ajout des routes des liens</msg>
+</logentry>
+<logentry
+   revision="17">
+<author>guillaume.miranda</author>
+<date>2014-03-14T14:53:22.659582Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/src/ProjetL3/UserBundle/Resources/config/doctrine/User.orm.yml</path>
+<path
+   kind="file"
+   action="M">/src/ProjetL3/GroupeBundle/Resources/views/Groupe/listing_users.html.twig</path>
+<path
+   action="M"
+   kind="file">/src/ProjetL3/GroupeBundle/Controller/GroupeController.php</path>
+<path
+   action="M"
+   kind="file">/src/ProjetL3/LienBundle/Entity/Lien.php</path>
+<path
+   action="M"
+   kind="file">/src/ProjetL3/GroupeBundle/Form/GroupeCreateType.php</path>
+<path
+   action="R"
+   kind="file">/src/ProjetL3/ListeBundle/Resources/config/doctrine/Liste.orm.yml</path>
+<path
+   kind="file"
+   action="M">/src/ProjetL3/TagBundle/Entity/Tag.php</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/GroupeBundle/Form/GroupeAddUsersType.php</path>
+<path
+   kind="file"
+   action="M">/composer.lock</path>
+<path
+   kind="file"
+   action="M">/src/ProjetL3/GroupeBundle/Resources/views/Groupe/index.html.twig</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/GroupeBundle/Resources/views/Groupe/add_user_groupe.html.twig</path>
+<path
+   action="M"
+   kind="file">/composer.phar</path>
+<path
+   kind="file"
+   action="M">/src/ProjetL3/UserBundle/Entity/User.php</path>
+<path
+   action="M"
+   kind="file">/src/ProjetL3/LienBundle/Resources/config/doctrine/Lien.orm.yml</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/TagBundle/Resources/config/doctrine</path>
+<path
+   kind="file"
+   action="R">/src/ProjetL3/ListeBundle/Entity/ListeRepository.php</path>
+<path
+   action="R"
+   kind="file">/src/ProjetL3/ListeBundle/Entity/Liste.php</path>
+<path
+   kind="file"
+   action="D">/src/ProjetL3/GroupeBundle/Form/GroupeAddAdminsType.php</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/GroupeBundle/Form/GroupeEditType.php</path>
+<path
+   action="M"
+   kind="file">/app/config/config_dev.yml</path>
+<path
+   action="M"
+   kind="file">/src/ProjetL3/GroupeBundle/Resources/views/Groupe/show.html.twig</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/GroupeBundle/Resources/views/Groupe/delete_groupe.html.twig</path>
+<path
+   action="M"
+   kind="file">/src/ProjetL3/GroupeBundle/Resources/config/routing/groupe.yml</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/TagBundle/Resources/config/doctrine/Tag.orm.yml</path>
+<path
+   kind="file"
+   action="M">/app/config/security.yml</path>
+<path
+   kind="file"
+   action="M">/src/ProjetL3/GroupeBundle/Resources/views/Groupe/edit.html.twig</path>
+</paths>
+<msg>Ajout des ecrans pour gérer les groupes</msg>
+</logentry>
+<logentry
+   revision="16">
+<author>marine.david</author>
+<date>2014-03-10T18:48:11.055765Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/app/config/config_dev.yml</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/ListeBundle/Resources/config/doctrine</path>
+<path
+   action="M"
+   kind="file">/src/ProjetL3/TagBundle/Entity/Tag.php</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/LienBundle/Controller/LienController.php</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/LienBundle/Resources/config/doctrine</path>
+<path
+   action="M"
+   kind="file">/src/ProjetL3/UserBundle/Resources/config/doctrine/User.orm.yml</path>
+<path
+   kind="file"
+   action="M">/src/ProjetL3/LienBundle/Entity/Lien.php</path>
+<path
+   kind="file"
+   action="M">/src/ProjetL3/LienBundle/Entity/LienRepository.php</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/LienBundle/Resources/config/doctrine/Lien.orm.yml</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/ListeBundle/Resources/config/doctrine/Liste.orm.yml</path>
+</paths>
+<msg>relations entre Lien et Tag</msg>
+</logentry>
+<logentry
+   revision="15">
+<author>remi.piau</author>
+<date>2014-03-09T15:53:22.446562Z</date>
+<paths>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/ListeBundle/Resources/translations/messages.fr.xlf</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/ListeBundle</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/ListeBundle/Controller/DefaultController.php</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/ListeBundle/Resources/config/services.yml</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/ListeBundle/Tests</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/ListeBundle/Tests/Controller/DefaultControllerTest.php</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/ListeBundle/Resources/public/js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/ListeBundle/Resources/config/routing.yml</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/ListeBundle/DependencyInjection/ProjetL3ListeExtension.php</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/ListeBundle/Resources/views</path>
+<path
+   kind="file"
+   action="M">/app/config/routing.yml</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/ListeBundle/Resources</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/ListeBundle/Entity</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/ListeBundle/DependencyInjection/Configuration.php</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/ListeBundle/Resources/views/Default/index.html.twig</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/ListeBundle/Resources/doc</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/ListeBundle/Resources/config</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/ListeBundle/Resources/public/css</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/ListeBundle/DependencyInjection</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/ListeBundle/Entity/Liste.php</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/ListeBundle/Entity/ListeRepository.php</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/ListeBundle/Controller</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/ListeBundle/ProjetL3ListeBundle.php</path>
+<path
+   action="M"
+   kind="file">/app/AppKernel.php</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/ListeBundle/Tests/Controller</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/ListeBundle/Resources/public</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/ListeBundle/Resources/views/Default</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/ListeBundle/Resources/translations</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/ListeBundle/Resources/doc/index.rst</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/ListeBundle/Resources/public/images</path>
+</paths>
+<msg>Creation du bundle et de l'entite Liste</msg>
+</logentry>
+<logentry
+   revision="14">
+<author>remi.piau</author>
+<date>2014-03-09T15:41:07.639230Z</date>
+<paths>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/TagBundle</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/TagBundle/Resources/translations/messages.fr.xlf</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/TagBundle/Controller/DefaultController.php</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/TagBundle/Resources/config/services.yml</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/TagBundle/DependencyInjection/ProjetL3TagExtension.php</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/TagBundle/Tests</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/TagBundle/Tests/Controller/DefaultControllerTest.php</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/TagBundle/Resources/public/js</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/TagBundle/Resources/config/routing.yml</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/TagBundle/Resources/views</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/TagBundle/Resources</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/TagBundle/Entity</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/TagBundle/Entity/TagRepository.php</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/TagBundle/Entity/Tag.php</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/TagBundle/Resources/views/Default/index.html.twig</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/TagBundle/ProjetL3TagBundle.php</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/TagBundle/DependencyInjection/Configuration.php</path>
+<path
+   action="M"
+   kind="file">/app/config/routing.yml</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/TagBundle/Resources/doc</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/TagBundle/Resources/config</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/TagBundle/Resources/public/css</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/TagBundle/DependencyInjection</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/TagBundle/Controller</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/TagBundle/Tests/Controller</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/TagBundle/Resources/public</path>
+<path
+   action="M"
+   kind="file">/app/AppKernel.php</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/TagBundle/Resources/views/Default</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/TagBundle/Resources/translations</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/TagBundle/Resources/public/images</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/TagBundle/Resources/doc/index.rst</path>
+</paths>
+<msg>Creation du bundle et de l'entite Tag</msg>
+</logentry>
+<logentry
+   revision="13">
+<author>guillaume.miranda</author>
+<date>2014-03-07T19:27:55.971446Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/src/ProjetL3/GroupeBundle/Controller/GroupeController.php</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/GroupeBundle/Resources/views/Groupe/listing_users.html.twig</path>
+<path
+   kind="file"
+   action="M">/src/ProjetL3/GroupeBundle/Form/GroupeCreateType.php</path>
+<path
+   action="M"
+   kind="file">/src/ProjetL3/GroupeBundle/Entity/Groupe.php</path>
+<path
+   kind="file"
+   action="M">/src/ProjetL3/GroupeBundle/Resources/views/Groupe/show.html.twig</path>
+<path
+   kind="file"
+   action="M">/src/ProjetL3/GroupeBundle/Resources/config/routing/groupe.yml</path>
+<path
+   action="D"
+   kind="file">/src/ProjetL3/GroupeBundle/Resources/config/validation.yml</path>
+<path
+   kind="file"
+   action="M">/src/ProjetL3/GroupeBundle/Resources/views/Groupe/new.html.twig</path>
+</paths>
+<msg>Ajouté l'ajout automatique de l'utilisateur courant comme membre et admin du groupe, affichage des membres du groupe</msg>
+</logentry>
+<logentry
+   revision="12">
+<author>marine.david</author>
+<date>2014-03-07T18:51:54.881701Z</date>
+<paths>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/LienBundle/Resources/doc/index.rst</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/LienBundle/Resources/public/images</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/LienBundle/Resources/translations/messages.fr.xlf</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/LienBundle</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/LienBundle/Controller/DefaultController.php</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/LienBundle/Resources/config/services.yml</path>
+<path
+   action="M"
+   kind="file">/app/config/routing.yml</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/LienBundle/Tests</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/LienBundle/Tests/Controller/DefaultControllerTest.php</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/LienBundle/Resources/public/js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/LienBundle/Resources/config/routing.yml</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/LienBundle/Resources/views</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/LienBundle/Resources</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/LienBundle/Entity</path>
+<path
+   action="M"
+   kind="file">/app/AppKernel.php</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/LienBundle/DependencyInjection/Configuration.php</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/LienBundle/DependencyInjection/ProjetL3LienExtension.php</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/LienBundle/Resources/views/Default/index.html.twig</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/LienBundle/Resources/doc</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/LienBundle/Resources/config</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/LienBundle/Resources/public/css</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/LienBundle/DependencyInjection</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/LienBundle/Controller</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/LienBundle/Tests/Controller</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/LienBundle/Resources/public</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/LienBundle/Entity/LienRepository.php</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/LienBundle/Entity/Lien.php</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/LienBundle/ProjetL3LienBundle.php</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/LienBundle/Resources/translations</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/LienBundle/Resources/views/Default</path>
+</paths>
+<msg>création LienBundle + l'entité Lien</msg>
+</logentry>
+<logentry
+   revision="11">
+<author>guillaume.miranda</author>
+<date>2014-03-05T02:30:31.231890Z</date>
+<paths>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/GroupeBundle</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/GroupeBundle/Form/GroupeAddAdminsType.php</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/GroupeBundle/Controller/DefaultController.php</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/GroupeBundle/Tests</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/GroupeBundle/Resources/config/services.yml</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/GroupeBundle/Entity/GroupeRepository.php</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/GroupeBundle/Form</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/GroupeBundle/Tests/Controller/DefaultControllerTest.php</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/GroupeBundle/Resources/public/js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/GroupeBundle/Resources/views/Groupe/show.html.twig</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/GroupeBundle/Resources/config/routing</path>
+<path
+   kind="file"
+   copyfrom-path="/src/ProjetL3/UserBundle/Resources/config/validation.yml"
+   copyfrom-rev="10"
+   action="A">/src/ProjetL3/GroupeBundle/Resources/config/validation.yml</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/GroupeBundle/Entity</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/GroupeBundle/Resources/views/Groupe/new.html.twig</path>
+<path
+   action="M"
+   kind="file">/src/ProjetL3/UserBundle/Resources/config/doctrine/User.orm.yml</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/GroupeBundle/DependencyInjection/Configuration.php</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/GroupeBundle/Resources/config</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/GroupeBundle/Resources/doc</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/GroupeBundle/DependencyInjection</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/GroupeBundle/Controller</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/GroupeBundle/Resources/config/doctrine/Groupe.orm.yml</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/GroupeBundle/Tests/Controller</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/GroupeBundle/Resources/config/doctrine</path>
+<path
+   action="M"
+   kind="file">/app/config/routing.yml</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/GroupeBundle/Resources/views/Groupe/index.html.twig</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/GroupeBundle/Resources/translations/messages.fr.xlf</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/GroupeBundle/Entity/Groupe.php</path>
+<path
+   kind="file"
+   action="M">/app/AppKernel.php</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/GroupeBundle/ProjetL3GroupeBundle.php</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/GroupeBundle/Resources/config/routing.yml</path>
+<path
+   kind="file"
+   action="M">/app/config/config.yml</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/GroupeBundle/Resources/config/routing/groupe.yml</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/GroupeBundle/Resources/views</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/GroupeBundle/Resources/views/Groupe</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/GroupeBundle/Resources/views/Groupe/edit.html.twig</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/GroupeBundle/Resources</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/GroupeBundle/Resources/views/Default/index.html.twig</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/GroupeBundle/Controller/GroupeController.php</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/GroupeBundle/Resources/public/css</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/GroupeBundle/Form/GroupeCreateType.php</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/GroupeBundle/Resources/views/Groupe/base_change_groupe.html.twig</path>
+<path
+   kind="file"
+   action="M">/src/ProjetL3/UserBundle/Resources/config/validation.yml</path>
+<path
+   kind="file"
+   action="M">/src/ProjetL3/UserBundle/Form/Type/RegistrationFormType.php</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/GroupeBundle/DependencyInjection/ProjetL3GroupeExtension.php</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/GroupeBundle/Resources/public</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/GroupeBundle/Resources/views/Default</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/GroupeBundle/Resources/translations</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/GroupeBundle/Resources/public/images</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/GroupeBundle/Resources/doc/index.rst</path>
+<path
+   action="M"
+   kind="file">/src/ProjetL3/UserBundle/Entity/User.php</path>
+</paths>
+<msg>Ajouté les groupes à la logique logicielle</msg>
+</logentry>
+<logentry
+   revision="10">
+<author>guillaume.miranda</author>
+<date>2014-03-04T11:32:45.336514Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/composer.lock</path>
+<path
+   kind="file"
+   action="M">/composer.phar</path>
+<path
+   kind="file"
+   action="M">/src/ProjetL3/UserBundle/Resources/config/doctrine/User.orm.yml</path>
+<path
+   action="M"
+   kind="file">/app/config/config_dev.yml</path>
+<path
+   action="M"
+   kind="file">/src/ProjetL3/UserBundle/Resources/config/validation.yml</path>
+</paths>
+<msg>Validator unique pour couple nom+prenom</msg>
+</logentry>
+<logentry
+   revision="9">
+<author>guillaume.miranda</author>
+<date>2014-02-12T14:08:25.198206Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/app/config/config.yml</path>
+<path
+   kind="file"
+   action="M">/composer.lock</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/UserBundle/Resources/views/Profile/show_content.html.twig</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/UserBundle/Form/Type/ProfileFormType.php</path>
+<path
+   action="M"
+   kind="file">/src/ProjetL3/UserBundle/Resources/config/services.yml</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/UserBundle/Resources/views/Profile</path>
+</paths>
+<msg>Added overriding profile</msg>
+</logentry>
+<logentry
+   revision="8">
+<author>guillaume.miranda</author>
+<date>2014-02-12T11:01:00.408594Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/composer.lock</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/UserBundle/DependencyInjection/Configuration.php</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/UserBundle/Resources/doc</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/UserBundle/Resources/public/css</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/UserBundle/Entity/User.php</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/UserBundle/DependencyInjection</path>
+<path
+   action="D"
+   kind="dir">/src/ProjetL3/MainBundle/Entity</path>
+<path
+   kind="dir"
+   action="A">/app/DoctrineMigrations</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/UserBundle/Resources/config/doctrine</path>
+<path
+   action="M"
+   kind="file">/app/config/config_dev.yml</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/UserBundle/Resources/public</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/UserBundle/Resources/translations</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/UserBundle/Resources/config/doctrine/User.orm.yml</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/UserBundle/Controller/DefaultController.php</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/UserBundle/Form</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/UserBundle/Tests/Controller/DefaultControllerTest.php</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/UserBundle/Resources/views</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/UserBundle/Resources</path>
+<path
+   kind="file"
+   action="M">/app/config/routing.yml</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/UserBundle/Entity</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/UserBundle/Resources/views/Default/index.html.twig</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/UserBundle/Resources/config</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/UserBundle/ProjetL3UserBundle.php</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/UserBundle/Controller</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/UserBundle/Form/Type</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/UserBundle/Tests/Controller</path>
+<path
+   kind="file"
+   action="M">/app/AppKernel.php</path>
+<path
+   kind="file"
+   action="M">/app/config/config.yml</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/UserBundle/Resources/views/Default</path>
+<path
+   kind="file"
+   action="M">/app/config/security.yml</path>
+<path
+   kind="dir"
+   action="D">/src/ProjetL3/MainBundle/Resources/config/doctrine</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/UserBundle/Resources/doc/index.rst</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/UserBundle/Resources/public/images</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/UserBundle/Resources/translations/messages.fr.xlf</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/UserBundle</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/UserBundle/Resources/config/services.yml</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/UserBundle/Tests</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/UserBundle/Resources/public/js</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/UserBundle/DependencyInjection/ProjetL3UserExtension.php</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/UserBundle/Resources/config/routing.yml</path>
+<path
+   action="A"
+   kind="file">/app/DoctrineMigrations/Version20140208124638.php</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/UserBundle/Resources/config/validation.yml</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/UserBundle/Form/Type/RegistrationFormType.php</path>
+</paths>
+<msg>Formulaire de nouveau compte version 1 + configuration de l'email d'envoi des confirmations</msg>
+</logentry>
+<logentry
+   revision="7">
+<author>guillaume.miranda</author>
+<date>2014-02-08T11:49:14.692890Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/app/AppKernel.php</path>
+<path
+   action="M"
+   kind="file">/src/ProjetL3/MainBundle/Entity/User.php</path>
+<path
+   kind="file"
+   action="M">/src/ProjetL3/MainBundle/Resources/config/doctrine/User.orm.yml</path>
+<path
+   action="M"
+   kind="file">/app/config/config_dev.yml</path>
+<path
+   action="M"
+   kind="file">/composer.lock</path>
+<path
+   kind="file"
+   action="M">/composer.json</path>
+</paths>
+<msg>Add DoctrineMigrations + BazingaFaker + GenemuForm + DoctrineExtensions + config_dev</msg>
+</logentry>
+<logentry
+   revision="6">
+<author>guillaume.miranda</author>
+<date>2014-02-08T07:15:09.463700Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/src/ProjetL3/MainBundle/Entity/User.php</path>
+<path
+   kind="file"
+   action="M">/src/ProjetL3/MainBundle/Resources/config/doctrine/User.orm.yml</path>
+<path
+   kind="file"
+   action="M">/composer.lock</path>
+<path
+   kind="file"
+   action="M">/composer.json</path>
+</paths>
+<msg>Add nom et prenom to UserEntity + add FakerBundle, GenemuFormBundle et DoctrineExtensions</msg>
+</logentry>
+<logentry
+   revision="5">
+<author>guillaume.miranda</author>
+<date>2014-02-07T16:31:10.247753Z</date>
+<paths>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/config/routing.yml</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/MainBundle/Resources/views</path>
+<path
+   kind="file"
+   action="M">/composer.lock</path>
+<path
+   action="A"
+   kind="file">/composer.phar</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/MainBundle/Resources</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/DependencyInjection/ProjetL3MainExtension.php</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/views/Default/index.html.twig</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/MainBundle/Resources/public/css</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/ProjetL3MainBundle.php</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/MainBundle/Resources/public</path>
+<path
+   kind="file"
+   action="M">/composer.json</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/MainBundle/Resources/translations</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/MainBundle/Resources/views/Default</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/MainBundle/Resources/public/images</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/doc/index.rst</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/config/doctrine/User.orm.yml</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/MainBundle</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Controller/DefaultController.php</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/MainBundle/Tests</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Resources/config/services.yml</path>
+<path
+   action="A"
+   kind="file">/src/ProjetL3/MainBundle/Tests/Controller/DefaultControllerTest.php</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/MainBundle/Resources/public/js</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/MainBundle/Entity</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/DependencyInjection/Configuration.php</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/MainBundle/Resources/doc</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/MainBundle/Resources/config</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Entity/User.php</path>
+<path
+   kind="file"
+   action="M">/app/AppKernel.php</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/MainBundle/DependencyInjection</path>
+<path
+   kind="file"
+   action="M">/app/config/config.yml</path>
+<path
+   action="A"
+   kind="dir">/src/ProjetL3/MainBundle/Controller</path>
+<path
+   action="M"
+   kind="file">/app/config/security.yml</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/MainBundle/Tests/Controller</path>
+<path
+   kind="dir"
+   action="A">/src/ProjetL3/MainBundle/Resources/config/doctrine</path>
+<path
+   kind="file"
+   action="A">/src/ProjetL3/MainBundle/Resources/translations/messages.fr.xlf</path>
+<path
+   kind="file"
+   action="M">/app/config/routing.yml</path>
+</paths>
+<msg>Add MainBundle + FOSUserBundle + composer.phar</msg>
+</logentry>
+<logentry
+   revision="4">
+<author>guillaume.miranda</author>
+<date>2014-02-07T16:17:45.408860Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/app/config/parameters.yml.dist</path>
+<path
+   kind="file"
+   action="M">/app/config/routing_dev.yml</path>
+</paths>
+<msg>Add security token + Use parameter.yml.dist to complete parameter.yml</msg>
+</logentry>
+<logentry
+   revision="3">
+<author>guillaume.miranda</author>
+<date>2014-02-07T15:42:03.370937Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/app/config/routing_dev.yml</path>
+<path
+   kind="dir"
+   action="D">/src/Acme</path>
+<path
+   kind="file"
+   action="M">/app/AppKernel.php</path>
+</paths>
+<msg>Removed AcmeDemoBundle</msg>
+</logentry>
+<logentry
+   revision="2">
+<author>guillaume.miranda</author>
+<date>2014-02-07T15:37:22.445318Z</date>
+<paths>
+<path
+   action="A"
+   kind="file">/src/Acme/DemoBundle/Resources/views/Secured/layout.html.twig</path>
+<path
+   action="A"
+   kind="file">/web/apple-touch-icon.png</path>
+<path
+   kind="dir"
+   action="A">/bin</path>
+<path
+   action="A"
+   kind="file">/src/Acme/DemoBundle/Controller/DemoController.php</path>
+<path
+   kind="file"
+   action="A">/src/Acme/DemoBundle/Resources/views/Demo/contact.html.twig</path>
+<path
+   kind="file"
+   action="A">/app/config/routing.yml</path>
+<path
+   action="A"
+   kind="dir">/src/Acme/DemoBundle/Form</path>
+<path
+   action="A"
+   kind="file">/app/config/config_prod.yml</path>
+<path
+   action="A"
+   kind="file">/app/autoload.php</path>
+<path
+   action="A"
+   kind="file">/composer.lock</path>
+<path
+   kind="file"
+   action="A">/bin/doctrine</path>
+<path
+   kind="file"
+   action="A">/src/Acme/DemoBundle/EventListener/ControllerListener.php</path>
+<path
+   kind="file"
+   action="A">/LICENSE</path>
+<path
+   kind="file"
+   action="A">/src/Acme/DemoBundle/Resources/views/Demo/hello.html.twig</path>
+<path
+   kind="file"
+   action="A">/UPGRADE-2.2.md</path>
+<path
+   action="A"
+   kind="file">/UPGRADE.md</path>
+<path
+   kind="file"
+   action="A">/.travis.yml</path>
+<path
+   action="A"
+   kind="file">/src/Acme/DemoBundle/Resources/views/Demo/index.html.twig</path>
+<path
+   action="A"
+   kind="file">/src/Acme/DemoBundle/Resources/public/images/welcome-demo.gif</path>
+<path
+   kind="file"
+   action="A">/src/Acme/DemoBundle/DependencyInjection/AcmeDemoExtension.php</path>
+<path
+   action="A"
+   kind="file">/app/config/config_dev.yml</path>
+<path
+   kind="file"
+   action="A">/src/Acme/DemoBundle/Resources/views/Secured/login.html.twig</path>
+<path
+   kind="dir"
+   action="A">/src/Acme/DemoBundle/Tests/Controller</path>
+<path
+   action="A"
+   kind="dir">/src/Acme/DemoBundle/Twig/Extension</path>
+<path
+   action="A"
+   kind="dir">/src/Acme/DemoBundle/EventListener</path>
+<path
+   action="A"
+   kind="file">/web/robots.txt</path>
+<path
+   action="A"
+   kind="file">/src/Acme/DemoBundle/AcmeDemoBundle.php</path>
+<path
+   kind="file"
+   action="A">/src/Acme/DemoBundle/Resources/public/css/demo.css</path>
+<path
+   kind="dir"
+   action="A">/src/Acme/DemoBundle/Resources/views/Demo</path>
+<path
+   kind="file"
+   action="A">/src/Acme/DemoBundle/Resources/public/images/welcome-quick-tour.gif</path>
+<path
+   kind="dir"
+   action="A">/src/Acme/DemoBundle</path>
+<path
+   action="A"
+   kind="file">/app/AppCache.php</path>
+<path
+   action="A"
+   kind="dir">/src/Acme/DemoBundle/Tests</path>
+<path
+   action="A"
+   kind="file">/app/Resources/views/base.html.twig</path>
+<path
+   action="A"
+   kind="file">/src/Acme/DemoBundle/Resources/config/routing.yml</path>
+<path
+   action="A"
+   kind="file">/web/app_dev.php</path>
+<path
+   kind="file"
+   action="A">/src/Acme/DemoBundle/Controller/SecuredController.php</path>
+<path
+   action="A"
+   kind="dir">/src/Acme/DemoBundle/Twig</path>
+<path
+   kind="file"
+   action="A">/web/.htaccess</path>
+<path
+   kind="file"
+   action="A">/src/Acme/DemoBundle/Resources/views/Secured/hello.html.twig</path>
+<path
+   action="A"
+   kind="dir">/src/Acme/DemoBundle/Resources/public/css</path>
+<path
+   action="A"
+   kind="file">/app/config/config.yml</path>
+<path
+   action="A"
+   kind="dir">/src/Acme/DemoBundle/DependencyInjection</path>
+<path
+   action="A"
+   kind="file">/src/Acme/DemoBundle/Resources/views/Welcome/index.html.twig</path>
+<path
+   kind="file"
+   action="A">/src/Acme/DemoBundle/Resources/views/Secured/helloadmin.html.twig</path>
+<path
+   kind="file"
+   action="A">/bin/doctrine.php</path>
+<path
+   kind="file"
+   action="A">/src/Acme/DemoBundle/Twig/Extension/DemoExtension.php</path>
+<path
+   kind="file"
+   action="A">/app/phpunit.xml.dist</path>
+<path
+   kind="file"
+   action="A">/src/Acme/DemoBundle/Resources/views/layout.html.twig</path>
+<path
+   action="A"
+   kind="dir">/src/Acme/DemoBundle/Resources/views/Secured</path>
+<path
+   kind="dir"
+   action="A">/src/Acme/DemoBundle/Resources/views/Welcome</path>
+<path
+   action="A"
+   kind="file">/src/Acme/DemoBundle/Tests/Controller/DemoControllerTest.php</path>
+<path
+   action="A"
+   kind="file">/app/SymfonyRequirements.php</path>
+<path
+   kind="dir"
+   action="A">/src/Acme/DemoBundle/Resources/views</path>
+<path
+   action="A"
+   kind="file">/app/check.php</path>
+<path
+   kind="file"
+   action="A">/web/app.php</path>
+<path
+   kind="dir"
+   action="A">/src/Acme/DemoBundle/Resources</path>
+<path
+   action="A"
+   kind="file">/src/Acme/DemoBundle/Resources/public/images/welcome-configure.gif</path>
+<path
+   action="A"
+   kind="dir">/app/Resources/views</path>
+<path
+   action="A"
+   kind="dir">/src/Acme/DemoBundle/Resources/config</path>
+<path
+   action="A"
+   kind="file">/app/config/config_test.yml</path>
+<path
+   kind="dir"
+   action="A">/app/Resources</path>
+<path
+   kind="file"
+   action="A">/app/.htaccess</path>
+<path
+   action="A"
+   kind="dir">/src/Acme</path>
+<path
+   kind="dir"
+   action="A">/src/Acme/DemoBundle/Controller</path>
+<path
+   kind="file"
+   action="A">/composer.json</path>
+<path
+   action="A"
+   kind="file">/src/Acme/DemoBundle/Resources/public/images/search.png</path>
+<path
+   kind="file"
+   action="A">/src/.htaccess</path>
+<path
+   action="A"
+   kind="dir">/src/Acme/DemoBundle/Resources/public/images</path>
+<path
+   action="A"
+   kind="file">/web/config.php</path>
+<path
+   kind="file"
+   action="A">/src/Acme/DemoBundle/Resources/public/images/blue-arrow.png</path>
+<path
+   kind="file"
+   action="A">/app/config/routing_dev.yml</path>
+<path
+   kind="file"
+   action="A">/src/Acme/DemoBundle/Resources/config/services.xml</path>
+<path
+   kind="file"
+   action="A">/web/favicon.ico</path>
+<path
+   kind="file"
+   action="A">/src/Acme/DemoBundle/Resources/public/images/logo.gif</path>
+<path
+   action="A"
+   kind="file">/src/Acme/DemoBundle/Resources/public/images/field-background.gif</path>
+<path
+   kind="file"
+   action="A">/app/console</path>
+<path
+   action="A"
+   kind="file">/src/Acme/DemoBundle/Controller/WelcomeController.php</path>
+<path
+   action="A"
+   kind="file">/UPGRADE-2.3.md</path>
+<path
+   kind="file"
+   action="A">/app/AppKernel.php</path>
+<path
+   action="A"
+   kind="dir">/src</path>
+<path
+   kind="file"
+   action="A">/app/config/parameters.yml.dist</path>
+<path
+   kind="file"
+   action="A">/app/config/security.yml</path>
+<path
+   action="A"
+   kind="file">/README.md</path>
+<path
+   action="A"
+   kind="file">/src/Acme/DemoBundle/Form/ContactType.php</path>
+<path
+   action="A"
+   kind="dir">/src/Acme/DemoBundle/Resources/public</path>
+</paths>
+<msg>add basic Symfony Standard 2.3.9</msg>
+</logentry>
+<logentry
+   revision="1">
+<author>guillaume.miranda</author>
+<date>2014-02-07T15:36:12.959593Z</date>
+<paths>
+<path
+   kind="dir"
+   action="A">/web</path>
+<path
+   kind="dir"
+   action="M">/</path>
+<path
+   kind="dir"
+   action="A">/app</path>
+<path
+   action="A"
+   kind="dir">/app/cache</path>
+<path
+   action="A"
+   kind="dir">/app/logs</path>
+<path
+   action="A"
+   kind="dir">/app/config</path>
+<path
+   action="A"
+   kind="file">/.svnignore</path>
+</paths>
+<msg>commit basic Symfony ignore list (vendor, app/bootstrap*, app/config/parameters.yml, app/cache/*, app/logs/*, web/bundles)</msg>
+</logentry>
+</log>

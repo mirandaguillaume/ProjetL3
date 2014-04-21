@@ -1,0 +1,7 @@
+parameters:
+#    projet_l3_lien.example.class: ProjetL3\LienBundle\Example
+
+services:
+#    projet_l3_lien.example:
+#        class: %projet_l3_lien.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

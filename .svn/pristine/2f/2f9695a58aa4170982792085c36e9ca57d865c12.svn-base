@@ -1,0 +1,10 @@
+ProjetL3\GroupeBundle\Entity\Groupe:
+    properties:
+        users:
+            - Count:
+                min: 1
+                minMessage: "Vous devez ajouter au moins un utilisateur"
+        admins:
+            - Count:
+                min: 1
+                minMessage: "Vous devez ajouter au moins un administrateur"

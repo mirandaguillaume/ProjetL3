@@ -1,0 +1,9 @@
+projet_l3_main_homepage:
+    pattern:  /
+    defaults: { _controller: ProjetL3MainBundle:Default:index }
+
+trier:
+    pattern: /trier
+    defaults: { _controller:"ProjetL3MainBundle:Default:Trier" }
+    requirements: { _method: POST }
+

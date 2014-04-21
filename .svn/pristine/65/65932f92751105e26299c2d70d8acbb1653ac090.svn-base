@@ -1,0 +1,46 @@
+{% extends '::base.html.twig' %}
+
+{% block body %}
+    {% javascripts  'bundles/sonatajquery/jquery-1.8.3.js'
+                    'bundles/projetl3main/star-rating/jquery.rating.js'%}
+    <script type="text/javascript" src="{{ asset_url }}"></script>
+    {% endjavascripts %}
+
+    {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+        <div>
+            <section id="public_feed">
+
+                <div class="box colborder">
+                    <h1>Public Feed</h1>
+                    <h1>Liste des liens</h1>
+                    <ul>
+                        {% for partage in partage_public|sort %}
+                            {{ render(controller('ProjetL3LienBundle:Lien:show_little',{ id : partage.lien.id })) }}
+                            <p>Partagé par {{ partage.user.username }}</p>
+                        {% endfor %}
+                    </ul>
+                </div>
+
+            </section>
+            <section class="users">
+                <div class="box colborder">
+                    <h1>Group Feed</h1>
+                        publication des liens avec l'id du groupe auquel appartient l'utilisateur connecté
+                </div>
+            </section>
+        </div>
+    {% else %}
+        <div class="bouton_inscription">
+            <label class="inscription">
+                <input type="button" name="submit" value="S'inscrire" onclick="self.location.href='{{ path('fos_user_registration_register') }}'">
+            </label>
+        </div>
+    {% endif %}
+{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    {% stylesheets 'bundles/projetl3main/css/rating.css' filter='cssrewrite' %}
+        <link rel="stylesheet" href="{{ asset_url }}" />
+    {% endstylesheets %}
+{% endblock %}

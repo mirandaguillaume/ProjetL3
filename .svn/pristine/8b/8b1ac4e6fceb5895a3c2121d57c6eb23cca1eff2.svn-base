@@ -1,0 +1,43 @@
+ProjetL3\UserBundle\Entity\User:
+    type:  entity
+    table: fos_user
+    id:
+        id:
+            type: integer
+            generator:
+                strategy: AUTO
+    fields:
+        nom:
+            type: string
+            length: 30
+            nullable: false
+        prenom:
+            type: string
+            length: 30
+            nullable: false
+        freqActu:
+            type: string
+
+    manyToMany:
+        groupes:
+            cascade: [ "persist", "merge" ]
+            targetEntity: ProjetL3\GroupeBundle\Entity\Groupe
+            mappedBy: users
+        groups_administrated:
+            cascade: [ "persist", "merge" ]
+            targetEntity: ProjetL3\GroupeBundle\Entity\Groupe
+            mappedBy: admins
+
+    oneToMany:
+        notes:
+            targetEntity: ProjetL3\LienBundle\Entity\NoteLien
+            mappedBy: user
+        bibliotheque:
+            cascade: ["persist"]
+            targetEntity: ProjetL3\UserBundle\Entity\Bibliotheque
+            mappedBy: user
+            orphanRemoval: true
+
+    uniqueConstraints:
+        unique_credential:
+            columns: [nom,prenom]

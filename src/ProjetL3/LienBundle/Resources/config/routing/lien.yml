@@ -1,0 +1,52 @@
+
+lien_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "ProjetL3LienBundle:Lien:show" }
+
+lien_new:
+    pattern:  /new
+    defaults: { _controller: "ProjetL3LienBundle:Lien:new" }
+
+lien_create:
+    pattern:  /create
+    defaults: { _controller: "ProjetL3LienBundle:Lien:create" }
+    requirements: { _method: post }
+
+lien_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "ProjetL3LienBundle:Lien:edit" }
+
+lien_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "ProjetL3LienBundle:Lien:update" }
+    requirements: { _method: post|put }
+
+noter_lien:
+    pattern: /{id}/noter
+    defaults: { _controller: "ProjetL3LienBundle:Lien:noter" }
+    requirements: { _method: post }
+
+lien_click:
+    pattern: /{id}/redirect
+    defaults: { _controller: "ProjetL3LienBundle:Lien:click" }
+
+lien_add_biblio:
+    pattern: /{id}/add_to_biblio
+    defaults: { _controller: "ProjetL3LienBundle:Lien:addToBibliotheque"}
+
+lien_remove_biblio:
+    pattern: /{id}/remove_from_biblio
+    defaults: { _controller: "ProjetL3LienBundle:Lien:removeFromBibliotheque" }
+
+partage_public:
+    pattern: /{id}/partage_public
+    defaults: { _controller: "ProjetL3LienBundle:Lien:partagePublic" }
+
+partage_prive:
+    pattern: /{id}/partage_prive
+    defaults: { _controller: "ProjetL3LienBundle:Lien:partagePrive" }
+    requirements: { _method: post }
+
+choix_groupe_partage:
+    pattern: /{id}/choix_groupe
+    defaults: { _controller: "ProjetL3LienBundle:Lien:choixGroupePartage" }

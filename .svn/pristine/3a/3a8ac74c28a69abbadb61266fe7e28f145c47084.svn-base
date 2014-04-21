@@ -1,0 +1,7 @@
+parameters:
+#    projet_l3_groupe.example.class: ProjetL3\GroupeBundle\Example
+
+services:
+#    projet_l3_groupe.example:
+#        class: %projet_l3_groupe.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

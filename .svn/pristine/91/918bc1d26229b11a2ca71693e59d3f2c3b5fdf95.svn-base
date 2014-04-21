@@ -1,0 +1,58 @@
+<?php
+
+namespace ProjetL3\MainBundle\Controller;
+
+use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\Request;
+use ProjetL3\LienBundle\Form\TriType;
+
+class DefaultController extends Controller
+{
+    public function indexAction()
+    {
+        $em = $this->getDoctrine()->getManager();
+
+        $groupes = $em->getRepository('ProjetL3UserBundle:Bibliotheque')->findByPartage(true);
+
+        $tri_form = $this->createForm(new TriType($em));
+
+        $tri_form->add('submit','submit',array(
+            'label' => 'Trier',
+        ));
+
+        $tri_form->add('view','hidden',array(
+            'data' => 'ProjetL3MainBundle:Default:index.html.twig',
+        ));
+
+        // $users = $em->getRepository('ProjetL3UserBundle:User')->findAll();
+        return $this->render('ProjetL3MainBundle:Default:index.html.twig',array(
+            'liens' => $groupes,
+            'tri_form' => $tri_form->createView(),
+            'test'
+        ));
+    }
+
+    public function trierAction() {
+        $request = $this->container->get('request');
+
+        if ($request->isXmlHttpRequest()){
+
+            $em = $this->getDoctrine()->getManager();
+
+            $form = $this->createForm(new TriType($em));
+
+            $form->handleRequest($request);
+
+            $filtres = $form->getData();
+
+            $liens_tries = $em->getRepository('ProjetL3LienBundle:Lien')->findAllTrie($filtres);
+
+            return $this->render($request->get('referer'),array(
+                'liens' => $liens_tries,
+            ));
+
+        } else {
+            return $request->get('referer');
+        }
+    }
+}

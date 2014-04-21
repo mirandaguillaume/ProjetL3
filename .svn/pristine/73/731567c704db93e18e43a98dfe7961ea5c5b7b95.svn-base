@@ -1,0 +1,22 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Marine
+ * Date: 08/03/14
+ * Time: 00:08
+ */
+public function testAction()
+{
+    $liste_liens = $this->getDoctrine()
+        ->getManager()
+        ->getRepository('SdzBlogBundle:Lien')
+        ->myFindAll();
+}
+
+public function NoteMoyenne ()
+{
+
+    //
+
+
+}

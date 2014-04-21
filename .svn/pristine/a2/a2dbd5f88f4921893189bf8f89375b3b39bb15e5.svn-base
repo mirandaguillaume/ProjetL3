@@ -1,0 +1,9 @@
+parameters:
+#    projet_l3_user.example.class: ProjetL3\UserBundle\Example
+
+services:
+    projetl3_user.registration.form.type:
+        class: ProjetL3\UserBundle\Form\Type\RegistrationFormType
+        arguments: [%fos_user.model.user.class%]
+        tags:
+            - { name: form.type, alias: projetl3_user_registration }

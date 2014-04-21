@@ -1,0 +1,32 @@
+{% extends '::base.html.twig' %}
+
+
+{% block body %}
+    <div>
+        <section id="public_feed">
+
+            <div class="box colborder">
+                <h1>Public Feed</h1>
+                <h1>Liste des liens</h1>
+                <ul>
+                    {% for lien in liens %}
+                        <div><strong>{{ lien.nom}}</strong>, url du lien : <a href="{{ lien.url }}"> {{ lien.nom }} </a></div>
+                    {% endfor %}
+                </ul>
+            </div>
+
+        </section>
+        <section class="users">
+            <div class="box colborder">
+                <h1>Group Feed</h1>
+                <h1>Liste des membres</h1>
+                <ul>
+                    {% for user in users %}
+                        <div><strong>{{ user.nom }}</strong></div>
+                    {% endfor %}
+                </ul>
+            </div>
+
+        </section>
+    </div>
+{% endblock %}

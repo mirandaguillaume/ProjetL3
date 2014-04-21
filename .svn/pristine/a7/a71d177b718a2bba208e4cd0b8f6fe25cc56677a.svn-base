@@ -1,0 +1,3 @@
+projet_l3_tag_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: ProjetL3TagBundle:Default:index }

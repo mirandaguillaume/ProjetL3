@@ -1,0 +1,61 @@
+{% extends '::base.html.twig' %}
+
+{% block body %}
+    <h1>Liste des utilisateurs du groupe {{ entity.nom }}</h1>
+    {{ parent() }}
+    <table>
+        {% for user in entity.users %}
+            <tr>
+                <th>Pseudo</th>
+                <td>
+                    <a href="{{ path('fos_user_profile_show',{ id: user.id }) }}">
+                        {{ user.username }}
+                    </a>
+                </td>
+                {% if app.user in entity.admins %}
+                    <td>
+                        {% if user not in entity.admins %}
+                            <a href="{{ path('groupe_add_admins',{ groupe_id: entity.id, admin_id: user.id }) }}">
+                                Ajouter l'utilisateur aux admininstrateurs
+                            </a>
+                        {% else %}
+                            <a href="{{ path('groupe_delete_admin',{ groupe_id: entity.id, admin_id: user.id }) }}">
+                                Supprimer l'utilisateur des administrateurs
+                            </a>
+                        {% endif %}
+                    </td>
+                    <td>
+                        {% if user != app.user %}
+                        <a href="
+                            {% if (entity.users|length)==1 %}
+                                {{ path('groupe_ask_delete',{ id: entity.id }) }}
+                            {% else %}
+                                {{ path('groupe_delete_user', { groupe_id: entity.id, user_id: user.id }) }}
+                            {% endif %}
+                        ">
+                            Retirer l'utilisateur de la liste des membres
+                        </a>
+                        {% else %}
+                        <a href="
+                            {% if (entity.users|length)==1 %}
+                                {{ path('groupe_ask_delete',{ id: entity.id }) }}
+                            {% else %}
+                                {{ path('groupe_delete_user', { groupe_id: entity.id, user_id: user.id }) }}
+                            {% endif %}
+                        ">
+                            Quitter le groupe
+                        </a>
+                        {% endif %}
+                    </td>
+                {% endif %}
+            </tr>
+        {% endfor %}
+    </table>
+    <ul>
+        <li>
+            <a href="{{ path('groupe_add_users', {id: entity.id }) }}">
+                Ajouter des utilisateurs au groupe
+            </a>
+        </li>
+    </ul>
+{% endblock %}

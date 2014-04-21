@@ -1,0 +1,7 @@
+parameters:
+#    projet_l3_liste.example.class: ProjetL3\ListeBundle\Example
+
+services:
+#    projet_l3_liste.example:
+#        class: %projet_l3_liste.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

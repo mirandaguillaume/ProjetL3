@@ -1,0 +1,3 @@
+bibliotheque:
+    path:     /bibliotheque
+    defaults: { _controller: ProjetL3UserBundle:Default:bibliotheque" }

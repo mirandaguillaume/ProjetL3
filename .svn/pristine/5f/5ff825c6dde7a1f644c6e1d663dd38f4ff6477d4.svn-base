@@ -1,0 +1,3 @@
+ProjetL3\TagBundle\Entity\Tag:
+    constraints:
+        - Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity: { fields: [nom], message: "Le tag existe déjà" }

@@ -1,0 +1,12 @@
+parameters:
+#    projet_l3_tag.example.class: ProjetL3\TagBundle\Example
+
+services:
+#    projet_l3_tag.example:
+#        class: %projet_l3_tag.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
+    projet_l3_tag.admin.tag:
+        class: ProjetL3\TagBundle\Admin\TagAdmin
+        arguments: [~, ProjetL3\TagBundle\Entity\Tag, ProjetL3TagBundle:TagAdmin]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Tag}

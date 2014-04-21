@@ -1,0 +1,29 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: guillaume
+ * Date: 04/03/14
+ * Time: 23:18
+ */
+
+namespace ProjetL3\GroupeBundle\Form;
+
+use ProjetL3\GroupeBundle\Form\GroupeCreateType as BaseForm;
+use Symfony\Component\Form\FormBuilderInterface;
+
+class GroupeEditAdminsType extends BaseForm {
+
+    /**
+     * @param FormBuilderInterface $builder
+     * @param array $options
+     */
+    public function buildForm(FormBuilderInterface $builder, array $options)
+    {
+        parent::buildForm($builder,$options);
+
+        $builder
+            ->add('admins')
+            ;
+    }
+
+} 

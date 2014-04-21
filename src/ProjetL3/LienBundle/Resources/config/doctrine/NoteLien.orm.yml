@@ -1,0 +1,22 @@
+ProjetL3\LienBundle\Entity\NoteLien:
+    type: entity
+    table: null
+    repositoryClass: ProjetL3\LienBundle\Entity\NoteLienRepository
+    id:
+        user:
+            associationKey: true
+        lien:
+            associationKey: true
+    fields:
+        note:
+            type: decimal
+
+    manyToOne:
+        user:
+            targetEntity: ProjetL3\UserBundle\Entity\User
+            inversedBy: notes
+        lien:
+            targetEntity: ProjetL3\LienBundle\Entity\Lien
+            inversedBy: notes
+
+    lifecycleCallbacks: {  }

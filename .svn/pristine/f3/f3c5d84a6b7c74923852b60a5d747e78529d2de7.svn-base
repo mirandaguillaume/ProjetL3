@@ -1,0 +1,83 @@
+{% extends '::base.html.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    {% stylesheets 'bundles/sonataadmin/select2/select2.css'%}
+        <link rel="stylesheet" href="{{ asset_url }}"/>
+    {% endstylesheets %}
+{% endblock %}
+
+{% block body %}
+    {{ form(theme_form) }}
+    <div id="liens">
+        {% for lien in liens %}
+            <div>
+                <strong>
+                    <a href="{{ path('lien_show', {id : lien.id}) }}">{{ lien.nom }}</a>
+                </strong>
+                <br> description : <a href="{{ path('lien_click',{id:lien.id}) }}"> {{ lien.url }} </a>
+                <div>
+                    <table>
+                        <tbody>
+                        <tr>
+                            <th>Tags</th>
+                            <td>
+                                {% for tag in lien.tags %}
+                                    {{ tag.nom }}
+                                {% endfor %}
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Thèmes</th>
+                            <td>
+                                {% for theme in lien.listes %}
+                                    {{ theme.nom }}
+                                {% endfor %}
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <ul>
+                    <li>
+                        <a href="{{ path('lien_remove_biblio',{id: lien.id}) }}">Retirer de la bibliothèque personnelle</a>
+                    </li>
+                    {% if app.user.partage(lien) == null %}
+                        <li>
+                            <a href="{{ path('partage_public',{id : lien.id}) }}">Partager le lien</a>
+                        </li>
+                    {% endif %}
+                    <li>
+                        <a href="{{ path('choix_groupe_partage',{id: app.user.partage(lien).id}) }}">Partager avec un groupe</a>
+                    </li>
+                </ul>
+                <br> ___________________________________________________
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script>
+        $('#projetl3_lienbundle_theme_choice_theme').change(function(){
+            var theme = $('#projetl3_lienbundle_theme_choice_theme :selected').text();
+            var DATA = 'theme='+theme;
+            $.ajax({
+                type: "POST",
+                url: "{{ path('lister_filtre') }}",
+                data: DATA,
+                cache: false,
+                success: function(data){
+                    $('body').html(data);
+                }
+            });
+            return false;
+        });
+    </script>
+
+    {% javascripts 'bundles/sonataadmin/select2/select2.js'%}
+        <script src="{{ asset_url }}" type="text/javascript"></script>
+    {% endjavascripts %}
+    {{ form_javascript(theme_form) }}
+{% endblock %}

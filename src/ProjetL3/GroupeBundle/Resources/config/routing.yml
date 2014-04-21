@@ -1,0 +1,7 @@
+projet_l3_groupe_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: ProjetL3GroupeBundle:Default:index }
+
+ProjetL3GroupeBundle_groupe:
+        resource: "@ProjetL3GroupeBundle/Resources/config/routing/groupe.yml"
+        prefix:   /groupe

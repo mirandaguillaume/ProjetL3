@@ -1,0 +1,3 @@
+user_bibliotheque:
+    pattern:  /bibliotheque
+    defaults: { _controller: "ProjetL3UserBundle:Default:bibliotheque" }

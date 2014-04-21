@@ -1,0 +1,7 @@
+projet_l3_lien_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: ProjetL3LienBundle:Default:index }
+
+ProjetL3LienBundle_lien:
+        resource: "@ProjetL3LienBundle/Resources/config/routing/lien.yml"
+        prefix:   /lien

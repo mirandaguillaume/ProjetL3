@@ -1,0 +1,3 @@
+ProjetL3TagBundle_tag:
+     resource: "@ProjetL3TagBundle/Resources/config/routing/tag.yml"
+     prefix:   /tag

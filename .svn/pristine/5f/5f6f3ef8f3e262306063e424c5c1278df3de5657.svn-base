@@ -1,0 +1,35 @@
+lien:
+    pattern:  /
+    defaults: { _controller: "ProjetL3LienBundle:Lien:index" }
+
+lien_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "ProjetL3LienBundle:Lien:show" }
+
+lien_new:
+    pattern:  /new
+    defaults: { _controller: "ProjetL3LienBundle:Lien:new" }
+
+lien_create:
+    pattern:  /create
+    defaults: { _controller: "ProjetL3LienBundle:Lien:create" }
+    requirements: { _method: post }
+
+lien_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "ProjetL3LienBundle:Lien:edit" }
+
+lien_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "ProjetL3LienBundle:Lien:update" }
+    requirements: { _method: post|put }
+
+lien_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "ProjetL3LienBundle:Lien:delete" }
+    requirements: { _method: post|delete }
+
+noter_lien:
+    pattern: /{id}/noter
+    defaults: { _controller: "ProjetL3LienBundle:Lien:noter" }
+    requirements: { _method: post }

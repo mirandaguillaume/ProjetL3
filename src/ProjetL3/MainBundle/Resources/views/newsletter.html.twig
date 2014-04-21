@@ -1,0 +1,42 @@
+Bonjour, {{ user.username }}
+Voici la newsletter de cette {% if user.freqActu == "semaine" %} semaine {% else %} journée {% endif %}
+
+{% for lien in liens %}
+    <div>
+        <strong>
+            <a href="{{ path('lien_show', {id : lien.id}) }}">{{ lien.nom }}</a>
+        </strong>
+        <br> description : <a href="{{ path('lien_click',{ id : lien.id }) }}"> {{ lien.url }} </a>
+        <table>
+            <tbody>
+            <tr>
+                <th>Note moyenne</th>
+                {% if lien.noteMoyenne != 0 %}
+                    <td>{{ lien.noteMoyenne }}</td>
+                {% else %}
+                    <td>Pas encore noté</td>
+                {% endif %}
+            </tr>
+            <tr>
+                <th>Nombre de votes</th>
+                <td>{{ lien.nbVotes }}</td>
+            </tr>
+            <tr>
+                <th>Nombre de clics</th>
+                <td>{{ lien.nbClics }}</td>
+            </tr>
+            <tr>
+                <td>Dans la bibliothèque de {{ lien.users|length }} utilisateurs</td>
+            </tr>
+            </tbody>
+        </table>
+        {% if lien not in user.liens %}
+            <div>
+                <a href="#">Ajouter à la bibliothèque</a>
+            </div>
+        {% endif %}
+        <br> ___________________________________________________
+
+    </div>
+
+{% endfor %}

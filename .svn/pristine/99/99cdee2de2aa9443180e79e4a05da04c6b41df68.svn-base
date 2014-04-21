@@ -1,0 +1,26 @@
+ProjetL3\ListeBundle\Entity\Liste:
+    type: entity
+    table: null
+    repositoryClass: ProjetL3\ListeBundle\Entity\ListeRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        nom:
+            type: string
+            length: 255
+    manyToMany:
+        liens:
+            targetEntity: ProjetL3\LienBundle\Entity\Lien
+            inversedBy: listes
+            joinTable:
+                name: liste_lien
+                joinColumns:
+                    liste_id:
+                        referencedColumnName: id
+                inverseJoinColumns:
+                    lien_id:
+                        referencedColumnName: id
+    lifecycleCallbacks: {  }

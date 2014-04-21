@@ -1,0 +1,45 @@
+{% extends '::base.html.twig' %}
+
+
+{% block title %}
+Bienvenue sur ma première page avec le Site de tata
+{% endblock %}
+
+{% block body %}
+    <div id="container">
+        <header>
+            <h1>Titre du site</h1>
+            <div id="buttons">
+                <a class="button" href="">Bibliotèque personnelle</a>
+                <a class="button" href="{{ path('fos_user_profile_show') }}"><img src="{{ asset('bundles/projetl3main/images/link_icons/gear.svg') }}" width="30" height="20">Compte</a>
+                <a class="button" href="{{ path('fos_user_security_logout') }}"><img src="{{ asset(('bundles/projetl3main/images/link_icons/logout.svg')) }}" width="30" height="20">Déconnexion</a>
+            </div>
+        </header>
+
+        <section id="public_feed">
+
+            <div class="box colborder">
+                <h1>Public Feed</h1>
+                <h1>Liste des liens</h1>
+                <ul>
+                    {% for lien in liens %}
+                        <div><strong>{{ lien.nom}}</strong>, url du lien : <a href="{{ lien.url }}"> {{ lien.nom }} </a></div>
+                    {% endfor %}
+                </ul>
+            </div>
+
+        </section>
+        <section class="users">
+            <div class="box colborder">
+                <h1>Group Feed</h1>
+                <h1>Liste des membres</h1>
+                <ul>
+                    {% for user in users %}
+                        <div><strong>{{ user.nom}}</strong></div>
+                    {% endfor %}
+                </ul>
+            </div>
+
+        </section>
+    </div>
+{% endblock %}

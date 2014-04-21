@@ -1,0 +1,81 @@
+{{ form_stylesheet(notation) }}
+
+{% stylesheets 'bundles/projetl3main/css/rating.css' %}
+<link rel="stylesheet" href="{{ asset_url }}"/>
+{% endstylesheets %}
+
+<div>
+
+    <table>
+        <thead>
+        <tr>
+            <th>
+                <a href="{{ path('lien_show', {id : lien.id}) }}">{{ lien.nom }}</a>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <a href="{{ path('lien_click',{ id : lien.id }) }}"> {{ lien.url }} </a>
+            </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>
+                {{ form(notation) }}
+            </td>
+        </tr>
+        <tr>
+            <th>Note moyenne</th>
+            {% if lien.noteMoyenne != 0 %}
+                <td>{{ lien.noteMoyenne|star_rating }}/ 5 par {{ lien.nbVotes }} personnes</td>
+            {% else %}
+                <td>Pas encore noté</td>
+            {% endif %}
+        </tr>
+        <tr>
+            <th>Nombre de clics</th>
+            <td>{{ lien.nbClics }}</td>
+        </tr>
+        <tr>
+            <td>Dans la bibliothèque de {{ lien.bibliotheques|length }} utilisateurs</td>
+        </tr>
+        <tr>
+            <th>Tags</th>
+            <td>
+                {% for tag in lien.tags %}
+                    {{ tag.nom }}
+                {% endfor %}
+            </td>
+        </tr>
+        <tr>
+            <th>Thèmes</th>
+            <td>
+                {% for theme in lien.listes %}
+                    {{ theme.nom }}
+                {% endfor %}
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            {% if lien not in partages_user %}
+                <a href="{{ path('lien_add_biblio',{ id : lien.id }) }}">Ajouter à la bibliothèque personnelle</a>
+            {% else %}
+                <a href="{{ path('lien_remove_biblio',{ id : lien.id }) }}">Retirer de la bibliothèque personnelle</a>
+            {% endif %}
+        </li>
+        <li>
+            <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-url="{{ lien.url }}" data-text="{{ lien.nom }}">Tweet</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            <iframe src="//www.facebook.com/plugins/like.php?href={{ lien.url }}&amp;width&amp;layout=standard&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=35" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:35px;" allowTransparency="true"></iframe>
+        </li>
+    </ul>
+
+    <br> ___________________________________________________
+
+</div>
+
+{{ form_javascript(notation) }}

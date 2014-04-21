@@ -1,0 +1,317 @@
+<?php
+
+namespace ProjetL3\GroupeBundle\Controller;
+
+use ProjetL3\GroupeBundle\Form\GroupeAddUsers;
+use ProjetL3\GroupeBundle\Form\GroupeAddUsersType;
+use ProjetL3\GroupeBundle\Form\GroupeCreateType;
+use ProjetL3\GroupeBundle\Form\GroupeEditType;
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+
+use ProjetL3\GroupeBundle\Entity\Groupe;
+
+/**
+ * Groupe controller.
+ *
+ */
+class GroupeController extends Controller
+{
+
+    /**
+     * Lists all Groupe entities.
+     *
+     */
+    public function indexAction()
+    {
+        $em = $this->getDoctrine()->getManager();
+
+        $entities = $em->getRepository('ProjetL3GroupeBundle:Groupe')->findAll();
+
+        return $this->render('ProjetL3GroupeBundle:Groupe:index.html.twig', array(
+            'entities' => $entities,
+        ));
+    }
+    /**
+     * Creates a new Groupe entity.
+     *
+     */
+    public function createAction(Request $request)
+    {
+        $entity = new Groupe();
+        $form = $this->createCreateForm($entity);
+        $form->handleRequest($request);
+
+        if ($form->isValid()) {
+            $em = $this->getDoctrine()->getManager();
+            $entity->addAdmin($this->getUser());
+            $em->persist($entity);
+            $em->flush();
+
+            return $this->redirect($this->generateUrl('groupe_show', array('id' => $entity->getId())));
+        }
+
+        return $this->render('ProjetL3GroupeBundle:Groupe:new.html.twig', array(
+            'entity' => $entity,
+            'form'   => $form->createView(),
+        ));
+    }
+
+    /**
+    * Creates a form to create a Groupe entity.
+    *
+    * @param Groupe $entity The entity
+    *
+    * @return \Symfony\Component\Form\Form The form
+    */
+    private function createCreateForm(Groupe $entity)
+    {
+        $form = $this->createForm(new GroupeCreateType($this->getUser()), $entity, array(
+            'action' => $this->generateUrl('groupe_create'),
+            'method' => 'POST',
+        ));
+
+        $form->add('submit', 'submit', array('label' => 'Create'));
+
+        return $form;
+    }
+
+    /**
+     * Displays a form to create a new Groupe entity.
+     *
+     */
+    public function newAction()
+    {
+        $entity = new Groupe();
+        $form   = $this->createCreateForm($entity);
+
+        return $this->render('ProjetL3GroupeBundle:Groupe:new.html.twig', array(
+            'entity' => $entity,
+            'form'   => $form->createView(),
+        ));
+    }
+
+    /**
+     * Finds and displays a Groupe entity.
+     *
+     */
+    public function showAction($id)
+    {
+        $em = $this->getDoctrine()->getManager();
+
+        $entity = $em->getRepository('ProjetL3GroupeBundle:Groupe')->find($id);
+
+        if (!$entity) {
+            throw $this->createNotFoundException('Unable to find Groupe entity.');
+        }
+
+        $deleteForm = $this->createDeleteForm($id);
+
+        return $this->render('ProjetL3GroupeBundle:Groupe:show.html.twig', array(
+            'entity'      => $entity,
+            'delete_form' => $deleteForm->createView(),        ));
+    }
+
+    /**
+     * Displays a form to edit an existing Groupe entity.
+     *
+     */
+    public function editAction($id)
+    {
+        $em = $this->getDoctrine()->getManager();
+
+        $entity = $em->getRepository('ProjetL3GroupeBundle:Groupe')->find($id);
+
+        if (!$entity) {
+            throw $this->createNotFoundException('Unable to find Groupe entity.');
+        }
+
+        $editForm = $this->createEditForm($entity);
+        $deleteForm = $this->createDeleteForm($id);
+
+        return $this->render('ProjetL3GroupeBundle:Groupe:edit.html.twig', array(
+            'entity'      => $entity,
+            'edit_form'   => $editForm->createView(),
+            'delete_form' => $deleteForm->createView(),
+        ));
+    }
+
+    /**
+    * Creates a form to edit a Groupe entity.
+    *
+    * @param Groupe $entity The entity
+    *
+    * @return \Symfony\Component\Form\Form The form
+    */
+    private function createEditForm(Groupe $entity)
+    {
+        $form = $this->createForm(new GroupeEditType(), $entity, array(
+            'action' => $this->generateUrl('groupe_update', array('id' => $entity->getId())),
+            'method' => 'PUT',
+        ));
+
+        $form->add('submit', 'submit', array('label' => 'Enregistrer les changements'));
+
+        return $form;
+    }
+    /**
+     * Edits an existing Groupe entity.
+     *
+     */
+    public function updateAction(Request $request, $id)
+    {
+        $em = $this->getDoctrine()->getManager();
+
+        $entity = $em->getRepository('ProjetL3GroupeBundle:Groupe')->find($id);
+
+        if (!$entity) {
+            throw $this->createNotFoundException('Unable to find Groupe entity.');
+        }
+
+        $editForm = $this->createEditForm($entity);
+        $editForm->handleRequest($request);
+
+        if ($editForm->isValid()) {
+            $em->flush();
+
+            return $this->redirect($this->generateUrl('groupe_edit', array('id' => $id)));
+        }
+
+        return $this->render('ProjetL3GroupeBundle:Groupe:edit.html.twig', array(
+            'entity'      => $entity,
+            'edit_form'   => $editForm->createView(),
+        ));
+    }
+
+    public function deleteGroupeAction($id) {
+        $delete_form = $this->createDeleteForm($id);
+        return $this->render('ProjetL3GroupeBundle:Groupe:delete_groupe.html.twig',array(
+            'delete_form' => $delete_form->createView(),
+            'entity' => $this->getDoctrine()->getManager()->getRepository('ProjetL3GroupeBundle:Groupe')->find($id),
+        ));
+    }
+
+    /**
+     * Deletes a Groupe entity.
+     *
+     */
+    public function deleteAction(Request $request, $id)
+    {
+        $form = $this->createDeleteForm($id);
+        $form->handleRequest($request);
+
+        if ($form->isValid()) {
+            $em = $this->getDoctrine()->getManager();
+            $entity = $em->getRepository('ProjetL3GroupeBundle:Groupe')->find($id);
+
+            if (!$entity) {
+                throw $this->createNotFoundException('Unable to find Groupe entity.');
+            }
+
+            $em->remove($entity);
+            $em->flush();
+        }
+
+        return $this->redirect($this->generateUrl('groupe'));
+    }
+
+    /**
+     * Creates a form to delete a Groupe entity by id.
+     *
+     * @param mixed $id The entity id
+     *
+     * @return \Symfony\Component\Form\Form The form
+     */
+    private function createDeleteForm($id)
+    {
+        return $this->createFormBuilder()
+            ->setAction($this->generateUrl('groupe_delete', array('id' => $id)))
+            ->setMethod('DELETE')
+            ->add('submit', 'submit', array('label' => 'Delete'))
+            ->getForm()
+        ;
+    }
+
+    public function deleteUserAction($groupe_id,$user_id) {
+        $em = $this->getDoctrine()->getManager();
+
+        $groupe = $em->getRepository('ProjetL3GroupeBundle:Groupe')->find($groupe_id);
+
+        $user = $em->getRepository('ProjetL3UserBundle:User')->find($user_id);
+
+        if($groupe->getAdmins()->contains($user)) {
+            $groupe->removeAdmin($user);
+        }
+
+        $groupe->removeUser($user);
+
+        $em->flush();
+
+        return $this->redirect($this->generateUrl('groupe_show',array('id' => $groupe_id)));
+    }
+
+    public function deleteAdminAction($groupe_id,$admin_id) {
+        $em = $this->getDoctrine()->getManager();
+
+        $groupe = $em->getRepository('ProjetL3GroupeBundle:Groupe')->find($groupe_id);
+        $admin = $em->getRepository('ProjetL3UserBundle:User')->find($admin_id);
+
+        if($groupe->getUsers()->contains($admin)) {
+            $groupe->removeUser($admin);
+        }
+
+        $groupe->removeAdmin($admin);
+
+        return $this->redirect($this->generateUrl('groupe_show',array('id' => $groupe_id)));
+    }
+
+    public function showMembersAction($id) {
+        $em = $this->getDoctrine()->getManager();
+
+        $groupe = $em->getRepository('ProjetL3GroupeBundle:Groupe')->find($id);
+
+        return $this->render('ProjetL3GroupeBundle:Groupe:listing_users.html.twig',array(
+            'entity' => $groupe,
+        ));
+    }
+
+    public function addUserAction($id) {
+        $em = $this->getDoctrine()->getManager();
+
+        $groupe = $em->getRepository('ProjetL3GroupeBundle:Groupe')->find($id);
+        $form = $this->createUserAddForm($groupe);
+
+        return $this->render('ProjetL3GroupeBundle:Groupe:add_user_groupe.html.twig',array(
+            'form' => $form->createView(),
+            'entity' => $groupe,
+        ));
+
+    }
+
+    public function persistUserAction($request, $id) {
+        $em = $this->getDoctrine()->getManager();
+
+        $groupe = $em->getRepository('ProjetL3GroupeBundle:Groupe')->find($id);
+        $form = $this->createUserAddForm($groupe);
+
+        $form->handleRequest($request);
+
+        if($form->isValid()) {
+            $em->flush();
+            return $this->redirect($this->generateUrl('groupe_show_members'));
+        }
+        return $this->render('ProjetL3GroupeBundle:Groupe:add_user_groupe.html.twig', array(
+             'form' => $form,
+             'entity' => $groupe,
+            ));
+    }
+
+    private function createUserAddForm(Groupe $groupe) {
+        $form = $this->createForm(new GroupeAddUsersType($groupe),$groupe
+        );
+        $form -> add('submit','submit',array(
+            'label' => 'Ajouter',
+        ));
+        return $form;
+    }
+}

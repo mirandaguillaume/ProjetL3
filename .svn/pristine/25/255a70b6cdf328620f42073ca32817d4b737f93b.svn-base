@@ -1,0 +1,32 @@
+ProjetL3\UserBundle\Entity\User:
+    type:  entity
+    table: fos_user
+    id:
+        id:
+            type: integer
+            generator:
+                strategy: AUTO
+    fields:
+        nom:
+            type: string
+            length: 30
+            nullable: false
+        prenom:
+            type: string
+            length: 30
+            nullable: false
+        freq_actu:
+            type: string
+            values: ['mois', 'jour', 'null']
+
+    manyToMany:
+        groupes:
+            targetEntity: ProjetL3\GroupeBundle\Entity\Groupe
+            mappedBy: users
+        groups_administrated:
+            targetEntity: ProjetL3\GroupeBundle\Entity\Groupe
+            mappedBy: admins
+
+    uniqueConstraints:
+        unique_credential:
+            columns: [nom,prenom]

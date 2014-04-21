@@ -1,0 +1,6 @@
+ProjetL3\MainBundle\Entity\Parameters:
+    properties:
+        note_max:
+            - Range:
+                  min: 1
+                  max: 5

@@ -1,0 +1,291 @@
+<?php
+
+namespace ProjetL3\LienBundle\Controller;
+
+use ProjetL3\LienBundle\Entity\NoteLien;
+use ProjetL3\LienBundle\Form\NotationType;
+use ProjetL3\TagBundle\Entity\Tag;
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+
+use ProjetL3\LienBundle\Entity\Lien;
+use ProjetL3\LienBundle\Form\LienType;
+
+/**
+ * Lien controller.
+ *
+ */
+class LienController extends Controller
+{
+
+    /**
+     * Lists all Lien entities.
+     *
+     */
+    public function indexAction()
+    {
+        $em = $this->getDoctrine()->getManager();
+
+        $entities = $em->getRepository('ProjetL3LienBundle:Lien')->findAll();
+
+        return $this->render('ProjetL3LienBundle:Lien:index.html.twig', array(
+            'entities' => $entities,
+        ));
+    }
+    /**
+     * Creates a new Lien entity.
+     *
+     */
+    public function createAction(Request $request)
+    {
+        $entity = new Lien();
+        $form = $this->createCreateForm($entity);
+        $form->handleRequest($request);
+
+        if ($form->isValid()) {
+            $em = $this->getDoctrine()->getManager();
+            $em->persist($entity);
+            $em->flush();
+
+            return $this->redirect($this->generateUrl('lien_show', array('id' => $entity->getId())));
+        }
+
+        return $this->render('ProjetL3LienBundle:Lien:new.html.twig', array(
+            'entity' => $entity,
+            'form'   => $form->createView(),
+        ));
+    }
+
+    /**
+     * Creates a form to create a Lien entity.
+     *
+     * @param Lien $entity The entity
+     *
+     * @return \Symfony\Component\Form\Form The form
+     */
+    private function createCreateForm(Lien $entity)
+    {
+        $tags = $this->getDoctrine()->getManager()->getRepository('ProjetL3TagBundle:Tag')->findAll();
+        $form = $this->createForm(new LienType($entity,$tags), $entity, array(
+            'action' => $this->generateUrl('lien_create'),
+            'method' => 'POST',
+        ));
+
+        $form->add('submit', 'submit', array('label' => 'Create'));
+
+        return $form;
+    }
+
+    /**
+     * Displays a form to create a new Lien entity.
+     *
+     */
+    public function newAction()
+    {
+        $entity = new Lien();
+        $form   = $this->createCreateForm($entity);
+
+        return $this->render('ProjetL3LienBundle:Lien:new.html.twig', array(
+            'entity' => $entity,
+            'form'   => $form->createView(),
+        ));
+    }
+
+    /**
+     * Finds and displays a Lien entity.
+     *
+     */
+    public function showAction($id)
+    {
+        $em = $this->getDoctrine()->getManager();
+
+        $entity = $em->getRepository('ProjetL3LienBundle:Lien')->find($id);
+
+        if (!$entity) {
+            throw $this->createNotFoundException('Unable to find Lien entity.');
+        }
+
+        $deleteForm = $this->createDeleteForm($id);
+
+        return $this->render('ProjetL3LienBundle:Lien:show.html.twig', array(
+            'entity'      => $entity,
+            'delete_form' => $deleteForm->createView(),        ));
+    }
+
+    /**
+     * Displays a form to edit an existing Lien entity.
+     *
+     */
+    public function editAction($id)
+    {
+        $em = $this->getDoctrine()->getManager();
+
+        $entity = $em->getRepository('ProjetL3LienBundle:Lien')->find($id);
+
+        if (!$entity) {
+            throw $this->createNotFoundException('Unable to find Lien entity.');
+        }
+
+        $editForm = $this->createEditForm($entity);
+        $deleteForm = $this->createDeleteForm($id);
+
+        return $this->render('ProjetL3LienBundle:Lien:edit.html.twig', array(
+            'entity'      => $entity,
+            'form'   => $editForm->createView(),
+            'delete_form' => $deleteForm->createView(),
+        ));
+    }
+
+    /**
+     * Creates a form to edit a Lien entity.
+     *
+     * @param Lien $entity The entity
+     *
+     * @return \Symfony\Component\Form\Form The form
+     */
+    private function createEditForm(Lien $entity)
+    {
+        $tags = $this->getDoctrine()->getManager()->getRepository('ProjetL3TagBundle:Tag')->findAll();
+        $form = $this->createForm(new LienType($entity,$tags), $entity, array(
+            'action' => $this->generateUrl('lien_update', array('id' => $entity->getId())),
+            'method' => 'PUT',
+        ));
+
+        $form->add('submit', 'submit', array('label' => 'Update'));
+
+        return $form;
+    }
+    /**
+     * Edits an existing Lien entity.
+     *
+     */
+    public function updateAction(Request $request, $id)
+    {
+        $em = $this->getDoctrine()->getManager();
+
+        $entity = $em->getRepository('ProjetL3LienBundle:Lien')->find($id);
+
+        if (!$entity) {
+            throw $this->createNotFoundException('Unable to find Lien entity.');
+        }
+
+        $deleteForm = $this->createDeleteForm($id);
+        $editForm = $this->createEditForm($entity);
+        $editForm->handleRequest($request);
+
+        if ($editForm->isValid()) {
+            $em->flush();
+
+            return $this->redirect($this->generateUrl('lien_edit', array('id' => $id)));
+        }
+
+        return $this->render('ProjetL3LienBundle:Lien:edit.html.twig', array(
+            'entity'      => $entity,
+            'edit_form'   => $editForm->createView(),
+            'delete_form' => $deleteForm->createView(),
+        ));
+    }
+    /**
+     * Deletes a Lien entity.
+     *
+     */
+    public function deleteAction(Request $request, $id)
+    {
+        $form = $this->createDeleteForm($id);
+        $form->handleRequest($request);
+
+        if ($form->isValid()) {
+            $em = $this->getDoctrine()->getManager();
+            $entity = $em->getRepository('ProjetL3LienBundle:Lien')->find($id);
+
+            if (!$entity) {
+                throw $this->createNotFoundException('Unable to find Lien entity.');
+            }
+
+            $em->remove($entity);
+            $em->flush();
+        }
+
+        return $this->redirect($this->generateUrl('lien'));
+    }
+
+    /**
+     * Creates a form to delete a Lien entity by id.
+     *
+     * @param mixed $id The entity id
+     *
+     * @return \Symfony\Component\Form\Form The form
+     */
+    private function createDeleteForm($id)
+    {
+        return $this->createFormBuilder()
+            ->setAction($this->generateUrl('lien_delete', array('id' => $id)))
+            ->setMethod('DELETE')
+            ->add('submit', 'submit', array('label' => 'Delete'))
+            ->getForm()
+            ;
+    }
+
+    public function noterAction(Request $request, $id) {
+        $em = $this->getDoctrine()->getManager();
+        $lien = $em->getRepository('ProjetL3LienBundle:Lien')->find($id);
+        $users = $lien->getNoteUsers();
+        if ($users->contains($this->getUser())) {
+            $this->get('session')->getFlashBag()->add(
+                'notice',
+                'Vous avez déjà noté ce lien'
+            );
+        }
+        else {
+            $form = $this->createForm(new NotationType($lien));
+            $form->handleRequest($request);
+            $note = new NoteLien();
+            $note->setNote($form->get('note')->getData());
+            $note->setLien($lien);
+            $note->setUser($this->getUser());
+            $lien->addNote($note);
+            $lien->setNbVotes($lien->getNbVotes()+1);
+            $this->getUser()->addNote($note);
+            $em->persist($note);
+            $em->flush();
+
+            $params = $em->getRepository('ProjetL3MainBundle:Parameters')->findAll();
+            $params = $params[0];
+
+            if ($params->getNoteMax()<=$lien->getNoteMoyenne() && $params->getVotesMax()==$lien->getNbVotes()) {
+                $this->sendTwitter($lien);
+            }
+
+        }
+
+        $referer = $this->getRequest()->headers->get('referer');
+        return $this->redirect($referer);
+    }
+
+    public function show_littleAction($id){
+        $em = $this->getDoctrine()->getManager();
+        $lien = $em->getRepository('ProjetL3LienBundle:Lien')->find($id);
+        $form = $this->createForm(new NotationType($lien),null,array(
+            'action' => $this->generateUrl('noter_lien', array(
+                    'id' => $lien->getId(),
+                )),
+            'method' => 'POST',
+        ));
+
+        $form->add('submit','submit',array(
+            'label' => 'Noter',
+        ));
+
+        return $this->render('@ProjetL3Lien/Lien/show_little.html.twig',array(
+            'lien' => $lien,
+            'notation' => $form->createView(),
+        ));
+    }
+
+    private function sendTwitter(Lien $lien){
+        $client = $this->container->get('guzzle.twitter.client');
+        $request = $client->post('statuses/update.json',null,array(
+            'status' => $lien->getNom().' '.$lien->getUrl(),
+        ))->send();
+    }
+}

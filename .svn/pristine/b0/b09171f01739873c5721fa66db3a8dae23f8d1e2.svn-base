@@ -1,0 +1,21 @@
+{% extends 'ProjetL3GroupeBundle:Groupe:base_change_groupe.html.twig' %}
+
+{% block body %}
+
+    <h1>Ajout d'utilisateurs au groupe {{ entity.nom }}</h1>
+
+    {{ form(form) }}
+
+    {% for user in entity.users %}
+        {{ user.username }}
+    {% endfor %}
+
+    <ul class="record_actions">
+        <li>
+            <a href="{{ path('groupe') }}">
+                Back to the list
+            </a>
+        </li>
+    </ul>
+
+{% endblock %}

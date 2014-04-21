@@ -1,0 +1,97 @@
+{% extends '::base.html.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    {% stylesheets 'bundles/projetl3main/css/rating.css'%}
+    <link rel="stylesheet" href="{{ asset_url }}"/>
+    {% endstylesheets %}
+{% endblock %}
+
+{% block body -%}
+    <h1>Lien</h1>
+
+    <table class="record_properties">
+        <tbody>
+        <tr>
+            <th>Nom</th>
+            <td>{{ entity.nom }}</td>
+        </tr>
+        <tr>
+            <th>Url</th>
+            <td><a href="{{ entity.url }}">{{ entity.url }}</a></td>
+        </tr>
+        <tr>
+            <th>Date</th>
+            <td>{{ entity.date|date('d/m/Y') }}</td>
+        </tr>
+        <tr>
+            <th>Note moyenne</th>
+            <td>{{ entity.noteMoyenne|star_rating }}</td>
+        </tr>
+        <tr>
+            <th>Nombre de votes</th>
+            <td>{{ entity.nbvotes }}</td>
+        </tr>
+        <tr>
+            <th>Nombre de clics</th>
+            <td>{{ entity.nbclics }}</td>
+        </tr>
+        <tr>
+            <td>Dans la bibliothèque de {{ entity.users|length }} utilisateurs</td>
+        </tr>
+        <tr>
+            <th>Tags</th>
+            <td>
+                {% for tag in entity.tags %}
+                    {{ tag.nom }}
+                {% endfor %}
+            </td>
+        </tr>
+        <tr>
+            <th>Thèmes</th>
+            <td>
+                {% for theme in entity.listes %}
+                    {{ theme.nom }}
+                {% endfor %}
+            </td>
+        </tr>
+        <tr>
+            <ul>
+                {% if entity in app.user.liens %}
+                    {% set partage = app.user.partage(entity) %}
+                    {% if not partage.partage %}
+                        <li>
+                            <a href="{{ path('partage_public', {id: entity.id}) }}">Partager le lien</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('lien_remove_biblio',{id: entity.id}) }}">Retirer de la bibliothèque personnelle</a>
+                        </li>
+                    {% endif %}
+                {% else %}
+                    <li>
+                        <a href="{{ path('lien_add_biblio',{id: entity.id}) }}">Ajouter à la bibliothèque personnelle</a>
+                    </li>
+                {% endif %}
+                <li>
+                    <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-url="{{ entity.url }}" data-text="{{ entity.nom }}">Tweet</a>
+                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                    <iframe src="//www.facebook.com/plugins/like.php?href={{ entity.url }}&amp;width&amp;layout=standard&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=35" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:35px;" allowTransparency="true"></iframe>
+                </li>
+            </ul>
+        </tr>
+        </tbody>
+    </table>
+
+    <ul class="record_actions">
+        <li>
+            <a href="{{ path('user_bibliotheque') }}">
+                Retour à la bibliothèque
+            </a>
+        </li>
+        <li>
+            <a href="{{ path('lien_edit', { 'id': entity.id }) }}">
+                Edit
+            </a>
+        </li>
+    </ul>
+{% endblock %}

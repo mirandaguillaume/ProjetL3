@@ -1,0 +1,55 @@
+ProjetL3\LienBundle\Entity\Lien:
+    type: entity
+    table: null
+    repositoryClass: ProjetL3\LienBundle\Entity\LienRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        nom:
+            type: string
+            length: 255
+            nullable: false
+            unique: true
+        url:
+            type: string
+            length: 255
+            nullable: false
+            unique: true
+        date:
+            type: datetime
+            nullable: false
+        nb_votes:
+            type: integer
+            nullable: false
+        nb_clics:
+            type: integer
+            nullable: false
+
+    manyToMany:
+        tags:
+            cascade: [ "persist", "merge", "remove" ]
+            targetEntity: ProjetL3\TagBundle\Entity\Tag
+            mappedBy: liens
+            orphanRemoval: true
+        listes:
+            cascade: [ "persist", "merge" ]
+            targetEntity: ProjetL3\ListeBundle\Entity\Liste
+            mappedBy : liens
+            orphanRemoval: true
+
+    oneToMany:
+        notes:
+            targetEntity: ProjetL3\LienBundle\Entity\NoteLien
+            mappedBy: lien
+        bibliotheques:
+            targetEntity: ProjetL3\UserBundle\Entity\Bibliotheque
+            mappedBy: lien
+
+    uniqueConstraints:
+            unique_credential:
+                columns: [ nom ]
+
+    lifecycleCallbacks: { }

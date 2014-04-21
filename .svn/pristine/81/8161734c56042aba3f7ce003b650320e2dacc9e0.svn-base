@@ -1,0 +1,23 @@
+{% extends '::base.html.twig' %}
+
+{% block body %}
+<ul>
+    {% for lien in liens %}
+        <div>
+            <strong>
+                <a href="{{ path('lien_show', {id : lien.id}) }}">{{ lien.nom }}</a>
+            </strong>
+            <br> description : <a href="{{ lien.url }}"> {{ lien.url }} </a>
+            <ul>
+                <li>
+                    <a href="{{ path('lien_remove_biblio',{id: lien.id}) }}">Retirer de la bibliothèque personnelle</a>
+                </li>
+                <li>
+                    <a href="{{ path('partage_public',{id : lien.id}) }}">Partager le lien</a>
+                </li>
+            </ul>
+            <br> ___________________________________________________
+        </div>
+    {% endfor %}
+</ul>
+    {% endblock %}

@@ -1,0 +1,21 @@
+parameters:
+#    projet_l3_user.example.class: ProjetL3\UserBundle\Example
+
+services:
+    projetl3_user.registration.form.type:
+        class: ProjetL3\UserBundle\Form\Type\RegistrationFormType
+        arguments: [%fos_user.model.user.class%]
+        tags:
+            - { name: form.type, alias: projetl3_user_registration }
+
+    projetl3_user.profile.form.type:
+            class: ProjetL3\UserBundle\Form\Type\ProfileFormType
+            arguments: [%fos_user.model.user.class%]
+            tags:
+                - { name: form.type, alias: projetl3_user_profile }
+
+    projet_l3_user.admin.user:
+        class: ProjetL3\UserBundle\Admin\UserAdmin
+        arguments: [~, ProjetL3\UserBundle\Entity\User, ProjetL3UserBundle:UserAdmin]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: User}

@@ -1,0 +1,30 @@
+{% extends '::base.html.twig' %}
+
+{% block body %}
+    <h1>Liste des utilisateurs du groupe {{ entity.nom }}</h1>
+    <table>
+        {% for user in entity.users %}
+            <tr>
+                <th>Pseudo</th>
+                <td>
+                    <a href="{{ path('fos_user_profile_show',{ id: user.id }) }}">
+                        {{ user.username }}
+                    </a>
+                </td>
+                {% if app.user in entity.admins %}
+                    <td>
+                        {% if user not in entity.admins %}
+                            <a href="">
+                                Ajouter l'utilisateur aux admininstrateurs
+                            </a>
+                        {% else %}
+                            <a href="">
+                                Supprimer l'utilisateur des administrateurs
+                            </a>
+                        {% endif %}
+                    </td>
+                {% endif %}
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}

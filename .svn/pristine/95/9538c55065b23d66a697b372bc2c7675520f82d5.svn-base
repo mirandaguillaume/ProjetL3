@@ -1,0 +1,42 @@
+ProjetL3\GroupeBundle\Entity\Groupe:
+    type: entity
+    table: null
+    repositoryClass: ProjetL3\GroupeBundle\Entity\GroupeRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        nom:
+            type: string
+            length: 255
+
+    manyToMany:
+        users:
+            cascade: [ "persist", "merge" ]
+            targetEntity: ProjetL3\UserBundle\Entity\User
+            inversedBy: groupes
+            joinTable:
+                 name: group_users
+                 joinColumns:
+                     groupe_id:
+                         referencedColumnName: id
+                 inverseJoinColumns:
+                     user_id:
+                         referencedColumnName: id
+
+        admins:
+            cascade: [ "persist", "merge" ]
+            targetEntity: ProjetL3\UserBundle\Entity\User
+            inversedBy: groups_administrated
+            joinTable:
+                name: groups_admins
+                joinColumns:
+                    groupe_id:
+                        referencedColumnName: id
+                inverseJoinColumns:
+                    admin_id:
+                        referencedColumnName: id
+
+    lifecycleCallbacks: {  }

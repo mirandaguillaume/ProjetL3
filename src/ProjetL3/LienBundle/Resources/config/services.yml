@@ -1,0 +1,16 @@
+parameters:
+#    projet_l3_lien.example.class: ProjetL3\LienBundle\Example
+
+services:
+#    projet_l3_lien.example:
+#        class: %projet_l3_lien.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
+    projet_l3_lien.admin.lien:
+        class: ProjetL3\LienBundle\Admin\LienAdmin
+        arguments: [~, ProjetL3\LienBundle\Entity\Lien, ProjetL3LienBundle:LienAdmin]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Lien}
+
+imports:
+ - { resource: twitter.conf.yml }
+ - { resource: twitter.yml }

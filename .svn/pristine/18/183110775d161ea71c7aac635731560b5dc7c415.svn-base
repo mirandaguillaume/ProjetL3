@@ -1,0 +1,7 @@
+projet_l3_user_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: ProjetL3UserBundle:Default:index }
+
+bibliotheque:
+    path:     /bibliotheque
+    defaults: { _controller: ProjetL3UserBundle:Default:biblio" }

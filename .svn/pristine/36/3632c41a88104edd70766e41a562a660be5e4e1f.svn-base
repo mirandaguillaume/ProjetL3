@@ -1,0 +1,42 @@
+groupe:
+    pattern:  /
+    defaults: { _controller: "ProjetL3GroupeBundle:Groupe:index" }
+
+groupe_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "ProjetL3GroupeBundle:Groupe:show" }
+
+groupe_new:
+    pattern:  /new
+    defaults: { _controller: "ProjetL3GroupeBundle:Groupe:new" }
+
+groupe_create:
+    pattern:  /create
+    defaults: { _controller: "ProjetL3GroupeBundle:Groupe:create" }
+    requirements: { _method: post }
+
+groupe_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "ProjetL3GroupeBundle:Groupe:edit" }
+
+groupe_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "ProjetL3GroupeBundle:Groupe:update" }
+    requirements: { _method: post|put }
+
+groupe_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "ProjetL3GroupeBundle:Groupe:delete" }
+    requirements: { _method: post|delete }
+
+groupe_delete_user:
+    pattern: /{groupe_id}/{user_id}/delete_user
+    defaults: { _controller: "ProjetL3GroupeBundle:Groupe:deleteUser" }
+
+groupe_delete_admin:
+    pattern: /{groupe_id}/{admin_id}/delete_admin
+    defaults: { _controller: "ProjetL3GroupeBundle:Groupe:deleteAdmin" }
+
+groupe_show_members:
+    pattern: /{id}/members
+    defaults: { _controller: "ProjetL3GroupeBundle:Groupe:showMembers" }

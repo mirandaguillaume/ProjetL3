@@ -1,0 +1,34 @@
+ProjetL3\LienBundle\Entity\Lien:
+    type: entity
+    table: null
+    repositoryClass: ProjetL3\LienBundle\Entity\LienRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        nom:
+            type: string
+            length: 255
+        url:
+            type: string
+            length: 255
+        date:
+            type: datetime
+        nb_votes:
+            type: integer
+        nb_clics:
+            type: integer
+
+    manyToMany:
+        users:
+            targetEntity: ProjetL3\UserBundle\Entity\User
+            mappedby: liens #à mettre dans users?
+            inversedBy: lien
+
+    uniqueConstraints:
+            unique_credential:
+                columns: [nom]
+
+    lifecycleCallbacks: {  }

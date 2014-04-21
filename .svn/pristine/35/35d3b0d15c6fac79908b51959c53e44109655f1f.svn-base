@@ -1,0 +1,16 @@
+ProjetL3\LienBundle\Entity\Lien:
+    constraints:
+        - Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity: { fields : [nom], message: "Un lien avec le même nom existe déjà" }
+        - Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity: { fields : [url], message: "Le lien existe déjà" }
+    properties:
+        url:
+            - Url: ~
+        tags:
+            - Count:
+                min: 1
+                minMessage: "Le lien doit avoir au moins un tag"
+        listes:
+            - Count:
+                min: 1
+                minMessage: "Le lien doit avoir au moins un thème"
+

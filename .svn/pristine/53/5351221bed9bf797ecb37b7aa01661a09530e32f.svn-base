@@ -1,0 +1,15 @@
+{% extends '@ProjetL3Lien/Lien/lien_base.html.twig' %}
+
+{% block body -%}
+    <h1>Lien edit</h1>
+
+    {{ form(form) }}
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('user_bibliotheque') }}">
+            Retour à la bibliothèque
+        </a>
+    </li>
+        </ul>
+{% endblock %}

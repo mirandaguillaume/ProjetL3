@@ -1,0 +1,3 @@
+ProjetL3ListeBundle_liste:
+     resource: "@ProjetL3ListeBundle/Resources/config/routing/liste.yml"
+     prefix:   /liste

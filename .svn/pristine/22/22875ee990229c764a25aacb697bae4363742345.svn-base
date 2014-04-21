@@ -1,0 +1,15 @@
+{% extends '::base.html.twig' %}
+
+{% block body %}
+<ul>
+    {% for lien in liens %}
+        <div>
+            <strong>
+                <a href="{{ path('lien_show', {id : lien.id}) }}">{{ lien.nom }}</a>
+            </strong>
+            <br> description : <a href="{{ lien.url }}"> {{ lien.url }} </a>
+            <br> ___________________________________________________
+        </div>
+    {% endfor %}
+</ul>
+    {% endblock %}

@@ -1,0 +1,6 @@
+ProjetL3\ListeBundle\Entity\Liste:
+    constraints:
+        - Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity: { fields: [nom], message: "Le thème existe déjà" }
+    properties:
+        nom:
+            - NotBlank: ~

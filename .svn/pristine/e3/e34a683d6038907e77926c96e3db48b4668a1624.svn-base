@@ -1,0 +1,46 @@
+{{ form_stylesheet(notation) }}
+
+<div>
+    <strong>
+        <a href="{{ path('lien_show', {id : lien.id}) }}">{{ lien.nom }}</a>
+    </strong>
+    <br> description : <a href="{{ path('lien_click',{ id : lien.id }) }}"> {{ lien.url }} </a>
+    <table>
+        <tbody>
+        <tr>
+            {{ form(notation) }}
+        </tr>
+        <tr>
+            <th>Note moyenne</th>
+            {% if lien.noteMoyenne != 0 %}
+                <td>{{ lien.noteMoyenne|star_rating }}</td>
+            {% else %}
+                <td>Pas encore noté</td>
+            {% endif %}
+        </tr>
+        <tr>
+            <th>Nombre de votes</th>
+            <td>{{ lien.nbVotes }}</td>
+        </tr>
+        <tr>
+            <th>Nombre de clics</th>
+            <td>{{ lien.nbClics }}</td>
+        </tr>
+        <tr>
+            <td>Dans la bibliothèque de {{ lien.bibliotheques|length }} utilisateurs</td>
+        </tr>
+        <tr>
+            {% if lien not in partages_user %}
+                <a href="{{ path('lien_add_biblio',{ id : lien.id }) }}">Ajouter à la bibliothèque personnelle</a>
+            {% else %}
+                <a href="{{ path('lien_remove_biblio',{ id : lien.id }) }}">Retirer de la bibliothèque personnelle</a>
+            {% endif %}
+        </tr>
+        </tbody>
+    </table>
+
+    <br> ___________________________________________________
+
+</div>
+
+{{ form_javascript(notation) }}
